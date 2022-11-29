@@ -3,3 +3,32 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Sintony', sans-serif;
+    align-items: center;
+    
+}
+
+img {
+    display: block;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-1 {
+    display: flex;
+    padding-top: 100px;
+}
+
+.col-4 {
+    max-width: calc(4 / 12 * 100%);
+}
+
+.col-8 {
+    max-width: calc(8 / 12 * 100%);
+}
