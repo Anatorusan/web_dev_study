@@ -11,11 +11,14 @@ body {
 img {
     display: block;
     max-width: 100%;
+    block-size: auto;
     object-fit: cover;
+    width: 393px;
+    height: 393px;
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1283px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -23,16 +26,20 @@ img {
 .section-1 {
     display: flex;
     padding-top: 154px;
+    padding-bottom: 155px;
     gap: 31px;
 }
 
 .col-4 {
-    max-width: 33.3%;
-    
+    flex-basis: calc(4 / 12 * 100%);
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .col-8 {
-    max-width: 66.7%;
+    flex-basis: calc(8 / 12 * 100%);
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .col-8 p {
