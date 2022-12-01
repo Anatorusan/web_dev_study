@@ -1,5 +1,70 @@
+/* adding fonts */
+
+@font-face {
+    font-family: "ogg";
+    src: url('fonts/OggLight.woff') format("woff");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ogg";
+    src: url('fonts/OggLightItalic.woff') format("woff");
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ogg";
+    src: url('fonts/OggMedium.woff') format("woff");
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ogg";
+    src: url('fonts/OggMediumItalic.woff') format("woff");
+    font-weight: medium;
+    font-style: italic;
+
+}@font-face {
+    font-family: "ogg";
+    src: url('fonts/OggRegular.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}@font-face {
+    font-family: "Trade Gothic LT Extended";
+    src: url('fonts/Trade\ Gothic\ LT\ Extended.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* general styles */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: "ogg";
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.line {
+    display: block;
+    border-bottom: 1px solid #D0A049;
+    width: 96px;
 }
