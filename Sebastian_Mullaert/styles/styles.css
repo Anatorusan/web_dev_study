@@ -151,7 +151,6 @@ img {
         font-size: 41px;
         line-height: 170%;
         max-width: 520px;
-        /* position:relative; */
     }
 
     .philosoph {
@@ -185,3 +184,33 @@ img {
     }
 }
 
+/* images styles */
+
+.images-container {
+    position: relative;
+}
+
+picture {
+    position: absolute;
+    top: 278px;
+    left: 204px;
+}
+
+@media all and (min-width: 768px) {
+    .images-container {
+        margin-left: 56px;
+    }
+
+    picture {
+        top: 208px;
+        left: 343px;
+    }
+
+    .big-picture {
+        ;
+    }
+
+    .small-picture {
+        ;
+    }
+}
