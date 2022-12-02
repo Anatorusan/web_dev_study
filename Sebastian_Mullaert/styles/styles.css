@@ -3,37 +3,39 @@
 @font-face {
     font-family: "ogg";
     src: url('fonts/OggLight.woff') format("woff");
-    font-weight: lighter;
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ogg";
     src: url('fonts/OggLightItalic.woff') format("woff");
-    font-weight: lighter;
+    font-weight: 600;
     font-style: italic;
 }
 
-@font-face {
+/* @font-face {
     font-family: "ogg";
     src: url('fonts/OggMedium.woff') format("woff");
     font-weight: medium;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: "ogg";
     src: url('fonts/OggMediumItalic.woff') format("woff");
-    font-weight: medium;
+    font-weight: 500;
     font-style: italic;
+}
 
-}@font-face {
+/* @font-face {
     font-family: "ogg";
     src: url('fonts/OggRegular.woff') format("woff");
     font-weight: normal;
     font-style: normal;
+} */
 
-}@font-face {
+@font-face {
     font-family: "Trade Gothic LT Extended";
     src: url('fonts/Trade\ Gothic\ LT\ Extended.woff') format("woff");
     font-weight: normal;
@@ -48,7 +50,7 @@
 }
 
 body {
-    font-family: "ogg";
+    font-family: "Trade Gothic LT Extended";
 }
 
 img {
@@ -58,8 +60,10 @@ img {
 }
 
 .wrapper {
-    max-width: 1320px;
-    margin: 0 auto;
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
     padding: 0 20px;
 }
 
@@ -69,11 +73,14 @@ img {
     width: 96px;
 }
 
+.mobile-hidden {
+    display: none;
+}
+
 /* grid layout */
 .section-container {
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 50%, 50%; */
 }
 
 .text-container {
@@ -86,16 +93,9 @@ img {
     grid-row: 2/3;
 }
 
-.breath {
-    display: none;
-}
-
-
-
 @media all and (min-width: 768px){
     .section-container {
         grid-template-columns: 50% 50%;
-        /* grid-template-rows: 50% 50%; */
     }
     
     .images-container {
@@ -109,3 +109,79 @@ img {
         grid-row: 2/3;
     }
 }
+
+/* text styles */
+.h2-container {
+    font-family: 'ogg';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    color: #000000;
+}
+
+.green-text {
+    color: #71870E;
+}
+
+.italic-text {
+    font-family: 'ogg';
+    font-style: italic;
+    font-weight: 600;
+}
+
+.line {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.line-and-more a {
+    display: flex;
+    text-decoration: none;
+    color: #CD9A3D;
+}
+
+@media all and (min-width: 768px) {
+    .text-container {
+        padding-top: 87px;
+    }
+
+    .h2-container {
+        margin-left: 75px;
+        font-size: 41px;
+        line-height: 170%;
+        max-width: 520px;
+        /* position:relative; */
+    }
+
+    .philosoph {
+        font-family: Trade Gothic LT Extended;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #000000;
+        opacity: 0.55;
+        margin-right: 15px;
+        position: relative;
+        bottom: 15px;
+    }
+
+    .italic-text {
+        font-family: 'ogg';
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .p-container {
+        margin-top: 100px;
+        margin-left: 225px;
+        margin-right: 40px;
+    }
+
+    .line-and-more {
+        margin-left: 97px;
+        margin-top: 66px;
+    }
+}
+
