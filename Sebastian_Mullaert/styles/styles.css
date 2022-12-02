@@ -94,7 +94,7 @@ img {
     grid-row: 2/3;
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 810px){
     .section-container {
         grid-template-columns: 50% 50%;
     }
@@ -155,7 +155,7 @@ img {
     margin-bottom: 30px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 810px) {
     .text-container {
         padding-top: 87px;
     }
@@ -223,7 +223,7 @@ picture {
     left: 204px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 810px) {
     .images-container {
         margin-left: 56px;
     }
@@ -231,13 +231,5 @@ picture {
     picture {
         top: 208px;
         left: 343px;
-    }
-
-    .big-picture {
-        ;
-    }
-
-    .small-picture {
-        ;
     }
 }
