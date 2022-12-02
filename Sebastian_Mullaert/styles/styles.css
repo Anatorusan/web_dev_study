@@ -51,6 +51,7 @@
 
 body {
     font-family: "Trade Gothic LT Extended";
+    color: #000000;
 }
 
 img {
@@ -115,9 +116,10 @@ img {
     font-family: 'ogg';
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 110%;
-    color: #000000;
+    font-size: 35px;
+    line-height: 170%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .green-text {
@@ -130,6 +132,12 @@ img {
     font-weight: 600;
 }
 
+.p-container {
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.85;
+}
+
 .line {
     margin-right: 30px;
     margin-bottom: 10px;
@@ -139,6 +147,12 @@ img {
     display: flex;
     text-decoration: none;
     color: #CD9A3D;
+}
+
+.line-and-more {
+    margin-top: 50px;
+    margin-left: 55px;
+    margin-bottom: 30px;
 }
 
 @media all and (min-width: 768px) {
@@ -159,7 +173,6 @@ img {
         font-size: 14px;
         line-height: 21px;
         text-transform: capitalize;
-        color: #000000;
         opacity: 0.55;
         margin-right: 15px;
         position: relative;
@@ -181,6 +194,20 @@ img {
     .line-and-more {
         margin-left: 97px;
         margin-top: 66px;
+    }
+
+    .breath {
+        position: relative;
+    }
+    
+    .breath p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #71870E;
+        opacity: 0.8;
+        position: absolute;
+        right: 260px;
+        top: 75px;
     }
 }
 
