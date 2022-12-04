@@ -21,14 +21,19 @@
             <div class="wrapper">
                 <nav class="header-container header-font">
                     <button class="button desktop-hidden">MENU</button>
-                    <div class="logo"><a href="#"><img src="icons/logo.svg"></a></div>
+                    <div class="logo"><a href="#" class="header-link">
+                        <picture>
+                            <source media="(min-width: 768px)" width="238" height="24" srcset="icons/logo.svg">
+                            <img src="icons/logo.svg" alt="logo" width="140" height="14">
+                        </picture>
+                    </a></div>
                     <ul class="header-list mobile-hidden">
-                        <li class="header-listitem"><button class="button"><img src="icons/search.svg"></button></li>
-                        <li class="header-listitem"><a href="#">ABOUT</a></li>
-                        <li class="header-listitem"><a href="#">SHOP</a></li>
-                        <li class="header-listitem"><a href="#"><div class="cart"><p>CART</p><img src="icons/cart.svg"></div></a></li> 
+                        <li class="header-listitem"><button class="button search"><img src="icons/search.svg"></button></li>
+                        <li class="header-listitem"><a href="#" class="header-link">ABOUT</a></li>
+                        <li class="header-listitem"><a href="#" class="header-link">SHOP</a></li>
+                        <li class="header-listitem"><a href="#" class="header-link"><div class="cart"><p>CART</p><img src="icons/cart.svg"></div></a></li> 
                     </ul>
-                    <div class="desktop-hidden"><a href="#"><p>CART</p></a></div>
+                    <div class="desktop-hidden"><a href="#" class="header-link"><p>CART</p></a></div>
                 </nav>
             </div>
         </header>
@@ -53,7 +58,7 @@
         </section>
         <section class="section-2">
             <div class="wrapper">
-                <div class="section-2-container">
+                <div class="section-2-container sintony">
                     <div class="sneakers-blackwhite">
                         <picture>
                             <source media="(min-width: 768px)" width="288" height="288" srcset="pictures/sneakers-balckandwhite-big.jpg">
@@ -82,7 +87,7 @@
         </section>
         <section class="section-4">
             <div class="wrapper">
-                <div class="section-4-container">
+                <div class="section-4-container sintony">
                     <div class="sneakers-white">
                         <picture>
                             <source media="(min-width: 768px)" width="606" height="608" srcset="pictures/sneakers-white-big.jpg">
