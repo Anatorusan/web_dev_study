@@ -17,20 +17,21 @@
         <base target="_blank">
     </head>
     <body>
-        <div class="wrapper header-container">
-            <header>
-                <nav>
+        <header>
+            <div class="wrapper">
+                <nav class="header-container header-font">
+                    <button class="button desktop-hidden">MENU</button>
                     <div class="logo"><a href="#"><img src="icons/logo.svg"></a></div>
-                    <ul>
-                        <li><button class="button"><img src="icons/search.svg"></button></li>
-                        <li><button class="button button-menu">MENU</button></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#"><div class="cart"><p>CART</p><img src="icons/cart.svg"></div></a></li> 
+                    <ul class="header-list mobile-hidden">
+                        <li class="header-listitem"><button class="button"><img src="icons/search.svg"></button></li>
+                        <li class="header-listitem"><a href="#">ABOUT</a></li>
+                        <li class="header-listitem"><a href="#">SHOP</a></li>
+                        <li class="header-listitem"><a href="#"><div class="cart"><p>CART</p><img src="icons/cart.svg"></div></a></li> 
                     </ul>
+                    <div class="desktop-hidden"><a href="#"><p>CART</p></a></div>
                 </nav>
-            </header>
-        </div>
+            </div>
+        </header>
         <section class="section-1">
             <div class="wrapper">
                 <div class="section-1-container">
