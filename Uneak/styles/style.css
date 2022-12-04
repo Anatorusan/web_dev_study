@@ -183,10 +183,22 @@ nav {
 }
 
 /* section-2 */
-.section-2-container {
+.section-2 {
     background-color: #F5F5F5;
+}
+
+.section-2-container {
     padding-top: 50px;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.sneakers-blackwhite {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .section-2-container div:last-child {
@@ -201,27 +213,23 @@ nav {
     .section-2-container {
         padding-top: 158px;
         padding-bottom: 164px;
+        flex-direction: row;
+        gap: 32px;
     }
 
     .section-2-container div:last-child {
         font-size: 40px;
-        padding-left: 32px;
-    }
-
-    .sneakers-blackwhite{
-        flex-shrink: 0;
-    }
-
-    .section-2 .wrapper {
-        display: flex;
     }
 }
 
 /* section-3 */
+.section-3 {
+    background-image: linear-gradient(to right, #8AA195, #332E0B);
+}
+
 .section-3-container {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: linear-gradient(to right, #8AA195, #332E0B);
     font-family: 'Tomorrow', sans-serif;
     color: #fff;
     font-size: 24px;
@@ -265,12 +273,16 @@ nav {
     line-height: 160%;
 }
 
+.sneakers-white {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
 @media all and (min-width: 768px) {
     .section-4-container {
         padding-top: 122px;
         padding-bottom: 122px;
-        /* flex-direction: row;
-        gap: 136px; */
     }
 
     .section-4-text div:first-child {
@@ -282,10 +294,6 @@ nav {
     .section-4-text div:last-child {
         font-size: 24px;
         line-height: 160%;        
-    }
-    
-    .sneakers-white {
-        flex-shrink: 0;
     }
 }
 
