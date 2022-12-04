@@ -240,15 +240,17 @@ nav {
 }
 
 /* section-4 */
-.section-4-container {
+.section-4 {
     background-color: #F5F5F5;
+}
+
+.section-4-container {
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: 'Sintony', sans-serif;
-}
-
-.sneakers-white img {
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .section-4-text div:first-child {
@@ -267,10 +269,8 @@ nav {
     .section-4-container {
         padding-top: 122px;
         padding-bottom: 122px;
-    }
-
-    .section-4-text{
-        padding-left: 136px;
+        /* flex-direction: row;
+        gap: 136px; */
     }
 
     .section-4-text div:first-child {
@@ -283,12 +283,16 @@ nav {
         font-size: 24px;
         line-height: 160%;        
     }
-
-    .section-4 .wrapper {
-        display: flex;
-    }
     
     .sneakers-white {
         flex-shrink: 0;
     }
+}
+
+@media all and (min-width: 1000px) {
+    .section-4-container{
+        flex-direction: row;
+        gap: 136px;
+    }
+    
 }
