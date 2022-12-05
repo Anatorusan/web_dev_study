@@ -1,0 +1,616 @@
+/* =============================================================
+========================== content ==========================
+============================================================= */
+/* 1. general styles */
+
+/* 2. navbar */
+
+/* 3. section-1 */
+
+/* 4. section-2 */
+
+/* 5. section-3 */
+
+/* 6. section-4 */
+
+/* 7. section-5 */
+
+/* 8. section-6 */
+
+/* 9. section-7 */
+
+/* 10. section-8 */
+
+/* =========================
+   ===== general styles ====
+   ========================= */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Basis Grotesque Pro', sans-serif;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    max-width: 760px;
+    min-width: 365px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    padding: 16px 31px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #0536FC;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:#0536fc8f;
+}
+
+@media all and (min-width: 768px) {
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    .button {
+        padding: 18px 35px;
+        border: 1px solid transparent;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+
+/* =========================
+   ======= navbar =======
+   ========================= */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.logo-container {
+    margin-left: 3.5%;
+    margin-right: 3.4%;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a p {
+    display: none;
+}
+
+.links-container li:nth-child(2),
+.links-container li:nth-child(3),
+.links-container li:nth-child(5),
+.links-container li:nth-child(6) {
+    display: none;
+}
+
+.logo-container a {
+    text-decoration: none;
+}
+
+.links-and-language-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.links-container ul {
+    display: flex;
+}
+
+.links-container li {
+    list-style-type: none;
+    margin-right: 0;
+    margin-right: 50px;
+}
+
+.links-container li::after {
+    content: url('icons/arrow_dropdown_black.svg');
+    padding-left: 10px;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    margin-right: 2.36vw;
+    color: #0536FC;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.85;    
+}
+
+.language-container p::after {
+    content: url('icons/arrow_dropdown_blue.svg');
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+@media all and (min-width: 768px) {
+
+    .links-container li:first-child {
+        display:none;
+    }
+
+    .links-container li {
+        list-style-type: none;
+        margin-right: 0;
+        margin-right: 25px;
+    }
+
+    .links-container li:nth-child(3) {
+        margin-right: 50px;
+    }
+    
+    .links-container li:nth-child(2),
+    .links-container li:nth-child(3),
+    .links-container li:nth-child(5),
+    .links-container li:nth-child(6) {
+        display: list-item;
+    }
+
+    .links-container li:nth-child(6) {
+        margin-right: 20px;
+    }
+
+}
+
+@media all and (min-width: 905px) {
+    .links-container li {
+        list-style-type: none;
+        margin-right: 0;
+        margin-right: 50px;
+    }
+
+    .links-container li:nth-child(3) {
+        margin-right: 101px;
+    }
+}
+
+@media all and (min-width: 1120px) {
+    .logo-container a p {
+        display: block;
+        padding-left: 10px;
+        color: #000000;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        opacity: 0.35;
+    }
+
+    .logo-container {
+        margin-left: 3.5%;
+        margin-right: 6.3%;
+    }
+}
+
+/* =========================
+   ======= section-1 =======
+   ========================= */
+.subsections-1 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+@media all and (min-width: 768px) {
+    .subsections-1 {
+        flex-direction: row;
+    }
+}
+
+/* ==== program ===== */
+
+.program {
+    padding-left: 14.06%;
+    padding-top: 8.06%;
+    padding-bottom: 8%;
+}
+
+.program-text h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #0536FC;
+    opacity: 0.9
+}
+
+.program-text h3 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 104%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.program-text p {
+    margin-top: 70px;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.button-container-1 {
+    margin-top: 100px;
+}
+
+/* ==== boy-and-plane ==== */
+.boy-and-plane {
+    position: relative;
+    max-width: 768px;
+}
+
+.boy {
+    display: block;
+    max-width: 100%;
+    block-size: auto;
+    object-fit: cover;
+    width: 720px;
+    height: 756px;
+}
+
+.boy-and-plane img:last-child {
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+}
+
+@media all and (min-width: 768px) {
+    .boy-and-plane {
+        max-width: 720px;
+    }
+    .program {
+        max-width: 720px;
+    }
+
+    .program-text h2 {
+        font-size: 16px;
+    }
+
+    .program-text h3 {
+        font-size: 57px;
+    }
+
+    .program-text p {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   ======= section-2 =======
+   ========================= */
+.subsections-2 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+@media all and (min-width: 768px) {
+    .subsections-2 {
+        flex-direction: row;
+    }
+}
+
+/* ==== tu ==== */
+.tu {
+    display: none;
+}
+
+.tu img {
+    display: block;
+    max-width: 100%;
+    block-size: auto;
+    object-fit: cover;
+    width: 565px;
+    height: 810px;
+}
+
+
+/* ==== goal ==== */
+
+.goal {
+    padding-top: 10.4%;
+    padding-left: 3.5%;
+    padding-right: 18.18%;
+}
+
+.goal h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #0536FC;
+    opacity: 0.9
+}
+
+.goal h3 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.goal p {
+    margin-top: 70px;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.button-container-2 {
+    margin-top: 100px;
+}
+
+@media all and (min-width: 768px) {
+    .tu {
+        max-width: 720px;
+    }
+
+    .goal {
+        max-width: 720px;
+    }
+
+    .goal h2 {
+        font-size: 16px;
+    }
+
+    .goal h3 {
+        font-size: 38px;
+    }
+
+    .goal p {
+        font-size: 16px;
+    }
+
+    .text-container-section-2 {
+        max-width: 330px;
+    }
+
+    .tu {
+        display: block;
+        background-color: #FF8201;
+        padding-left: 10.8%;
+    }
+}
+
+   
+/* =========================
+   ======= section-8 =======
+   ========================= */
+
+.subsections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hero {
+    max-width: 768px;
+}
+
+.sub-section-1,
+.sub-section-2,
+.sub-section-3,
+.sub-section-4 {
+    position: relative;
+    padding-top: 50px;
+    max-width: 768px;
+}
+
+@media all and (min-width: 768px) {
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    .subsections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+
+    .sub-section-1,
+    .sub-section-2,
+    .sub-section-3,
+    .sub-section-4
+     {
+        flex-basis: 355px;
+        flex-grow: 1;
+    }
+}
+
+/* ==== hero ==== */
+.hero {
+    background: url('images/teacher-children.png') no-repeat center;
+    background-size: cover;
+    padding-top: 204px;
+    padding-bottom: 230px;
+}
+
+.hero-text {
+    color: #fff;
+    padding-left: 10px;
+    max-width: 350px;
+}
+
+.hero-text h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.hero-text h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+    .hero {
+        max-width: 1440px;
+        padding-left: 210px;
+    }
+
+    .hero-text {
+        max-width: 460px;
+    }
+
+    .hero-text h2 {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-text h3 {
+        font-size: 38px;
+    }
+}
+
+/* ==== subsections ==== */
+.sub-section-2 {
+    background-color: #0536FC;
+}
+
+.sub-section-1-text,
+.sub-section-2-text,
+.sub-section-3-text,
+.sub-section-4-text {
+    margin-left: 50px;
+    padding-right: 10px;
+    padding-bottom: 150px;
+}
+
+.sub-section-1-text p:first-child,
+.sub-section-2-text p:first-child,
+.sub-section-3-text p:first-child,
+.sub-section-4-text p:first-child {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    color: #000;
+}
+
+.sub-section-2-text p:first-child {
+    color: #fff;
+}
+
+.sub-section-1-text h4,
+.sub-section-2-text h4,
+.sub-section-3-text h4,
+.sub-section-4-text h4 {
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.sub-section-2-text h4 {
+    color: #fff;
+}
+
+.sub-section-1-text:last-child p,
+.sub-section-2-text:last-child p,
+.sub-section-3-text:last-child p,
+.sub-section-4-text:last-child p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    opacity: 0.6;
+    color: #000;
+}
+
+.sub-section-2-text:last-child p {
+    color: #fff;
+}
+
+.sub-section-1-text img,
+.sub-section-3-text img,
+.sub-section-4-text img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.sub-section-2-text img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media all and (min-width: 1075px) {
+    .sub-section-3 {
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+    }
+}
