@@ -421,10 +421,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.hero {
-    max-width: 768px;
+    list-style: none;
 }
 
 .sect8__sub {
@@ -453,9 +450,13 @@ img {
 }
 
 /* ==== hero ==== */
-.hero {
+.hero-background {
     background: url('images/teacher-children.png') no-repeat center;
     background-size: cover;
+}
+
+.hero {
+    
     padding-top: 204px;
     padding-bottom: 230px;
 }
