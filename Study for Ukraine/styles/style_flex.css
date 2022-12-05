@@ -39,8 +39,14 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .wrapper {
-    max-width: 760px;
+    max-width: 1440px;
     min-width: 365px;
     margin: 0 auto;
     padding: 0 5px;
@@ -49,6 +55,7 @@ body::-webkit-scrollbar {
 .section-container {
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
 }
 
 .button {
@@ -63,22 +70,25 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background-color:#0536fc8f;
 }
 
+.blue_bckgr {
+    background-color: #0536FC;
+}
+
 @media all and (min-width: 768px) {
-    .wrapper {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 0 5px;
-    }
 
     .button {
         padding: 18px 35px;
         border: 1px solid transparent;
         font-size: 16px;
         line-height: 150%;
+    }
+
+    .row {
+        flex-direction: row;
     }
 }
 
@@ -126,7 +136,6 @@ body::-webkit-scrollbar {
 .links-container {
     display: flex;
     align-items: center;
-
 }
 
 .links-container ul {
@@ -235,17 +244,6 @@ body::-webkit-scrollbar {
 /* =========================
    ======= section-1 =======
    ========================= */
-.subsections-1 {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-}
-
-@media all and (min-width: 768px) {
-    .subsections-1 {
-        flex-direction: row;
-    }
-}
 
 /* ==== program ===== */
 
@@ -295,9 +293,6 @@ body::-webkit-scrollbar {
 }
 
 .boy {
-    display: block;
-    max-width: 100%;
-    block-size: auto;
     object-fit: cover;
     width: 720px;
     height: 756px;
@@ -333,17 +328,6 @@ body::-webkit-scrollbar {
 /* =========================
    ======= section-2 =======
    ========================= */
-.subsections-2 {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-}
-
-@media all and (min-width: 768px) {
-    .subsections-2 {
-        flex-direction: row;
-    }
-}
 
 /* ==== tu ==== */
 .tu {
@@ -351,14 +335,10 @@ body::-webkit-scrollbar {
 }
 
 .tu img {
-    display: block;
-    max-width: 100%;
-    block-size: auto;
-    object-fit: cover;
-    width: 565px;
-    height: 810px;
+   object-fit: cover;
+   width: 565px;
+   height: 810px;
 }
-
 
 /* ==== goal ==== */
 
@@ -432,7 +412,6 @@ body::-webkit-scrollbar {
         padding-left: 10.8%;
     }
 }
-
    
 /* =========================
    ======= section-8 =======
@@ -448,10 +427,7 @@ body::-webkit-scrollbar {
     max-width: 768px;
 }
 
-.sub-section-1,
-.sub-section-2,
-.sub-section-3,
-.sub-section-4 {
+.sect8__sub {
     position: relative;
     padding-top: 50px;
     max-width: 768px;
@@ -470,11 +446,7 @@ body::-webkit-scrollbar {
         justify-content:space-between;
     }
 
-    .sub-section-1,
-    .sub-section-2,
-    .sub-section-3,
-    .sub-section-4
-     {
+    .sect8__sub {
         flex-basis: 355px;
         flex-grow: 1;
     }
@@ -533,9 +505,6 @@ body::-webkit-scrollbar {
 }
 
 /* ==== subsections ==== */
-.sub-section-2 {
-    background-color: #0536FC;
-}
 
 .sub-section-1-text,
 .sub-section-2-text,
