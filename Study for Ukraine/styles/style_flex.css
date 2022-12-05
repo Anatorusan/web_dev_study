@@ -441,9 +441,14 @@ img {
     }
 
     .sect8__sub {
-        /* change this */
-        flex-basis: 355px;
+        flex-basis: 50%;
         flex-grow: 1;
+    }
+}
+
+@media all and (min-width: 1270px) {
+    .sect8__sub {
+        flex-basis: 25%;
     }
 }
 
@@ -503,7 +508,7 @@ img {
 
 .sect8__sub__text {
     margin-left: 50px;
-    padding-right: 10px;
+    padding-right: 100px;
     padding-bottom: 150px;
     font-size: 16px;
     line-height: 150%;
