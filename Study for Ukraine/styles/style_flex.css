@@ -112,6 +112,9 @@ img {
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
 }
 
 .logo-container {
@@ -161,9 +164,6 @@ img {
 .links-container a {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.03em;
     text-transform: uppercase;
     opacity: 0.85;
 }
@@ -214,11 +214,8 @@ select {
     .logo-container a p {
         display: block;
         padding-left: 10px;
-        color: #000000;
+        color: #000;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.03em;
         opacity: 0.35;
     }
 
