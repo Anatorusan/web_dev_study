@@ -156,7 +156,6 @@ img {
 .links-container a {
     text-decoration: none;
     color: #000;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.03em;
@@ -167,19 +166,17 @@ img {
 .language-container {
     display: flex;
     align-items: center;
-    margin-right: 2.36vw;
+    margin-right: 3.5%;
+}
+
+select {
     color: #0536FC;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    opacity: 0.85;    
-}
-
-.language-container p::after {
-    content: url('icons/arrow_dropdown_blue.svg');
-    padding-left: 10px;
-    margin-bottom: 15px;
+    opacity: 0.85;
+    border: 1px solid transparent;
 }
 
 @media all and (min-width: 768px) {
@@ -189,8 +186,6 @@ img {
     }
 
     .links-container li {
-        list-style-type: none;
-        margin-right: 0;
         margin-right: 25px;
     }
 
@@ -213,8 +208,6 @@ img {
 
 @media all and (min-width: 905px) {
     .links-container li {
-        list-style-type: none;
-        margin-right: 0;
         margin-right: 50px;
     }
 
@@ -289,7 +282,6 @@ img {
 /* ==== boy-and-plane ==== */
 .boy-and-plane {
     position: relative;
-    max-width: 768px;
 }
 
 .boy {
@@ -306,10 +298,10 @@ img {
 
 @media all and (min-width: 768px) {
     .boy-and-plane {
-        max-width: 720px;
+        max-width: 50%;
     }
     .program {
-        max-width: 720px;
+        max-width: 50%;
     }
 
     .program-text h2 {
@@ -383,11 +375,11 @@ img {
 
 @media all and (min-width: 768px) {
     .tu {
-        max-width: 720px;
+        max-width: 50%;
     }
 
     .goal {
-        max-width: 720px;
+        max-width: 50%;
     }
 
     .goal h2 {
