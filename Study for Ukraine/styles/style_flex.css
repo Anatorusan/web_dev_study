@@ -282,18 +282,32 @@ select {
 /* ==== boy-and-plane ==== */
 .boy-and-plane {
     position: relative;
+    max-height: 320px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 .boy {
     object-fit: cover;
-    width: 720px;
-    height: 756px;
+    height: 100%;
 }
 
 .boy-and-plane img:last-child {
     position: absolute;
     right: 35px;
     bottom: 35px;
+}
+
+@media all and (min-width: 430px) {
+    .boy-and-plane {
+        max-height: initial;
+    }
+
+    .boy {
+        object-fit: cover;
+        width: 720px;
+        height: 756px;
+    }
 }
 
 @media all and (min-width: 768px) {
