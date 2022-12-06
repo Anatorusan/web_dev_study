@@ -145,7 +145,7 @@ img {
 .links-container li {
     list-style-type: none;
     margin-right: 0;
-    margin-right: 50px;
+    margin-right: 35px;
 }
 
 .links-container li::after {
@@ -338,6 +338,7 @@ select {
     padding-top: 10.4%;
     padding-left: 3.5%;
     padding-right: 18.18%;
+    padding-bottom: 10.4%;
 }
 
 .goal h2 {
@@ -445,10 +446,10 @@ select {
 .hero-background {
     background: url('images/teacher-children.png') no-repeat center;
     background-size: cover;
+    min-width: 365px;
 }
 
 .hero {
-    
     padding-top: 204px;
     padding-bottom: 230px;
 }
