@@ -48,8 +48,8 @@ img {
 .wrapper {
     max-width: 1440px;
     min-width: 365px;
-    margin: 0 auto;
-    padding: 0 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-container {
@@ -76,6 +76,23 @@ img {
 
 .blue_bckgr {
     background-color: #0536FC;
+}
+
+.arrow-container {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .mobile-hidden {
@@ -410,7 +427,15 @@ select {
         padding-left: 10.8%;
     }
 }
-   
+
+/* =========================
+   ======= section-3 =======
+   ========================= */
+
+/* =========================
+   ======= section-4 =======
+   ========================= */
+
 /* =========================
    ======= section-8 =======
    ========================= */
@@ -529,24 +554,6 @@ select {
 
 .sect8__sub__text:last-child p {
     opacity: 0.6;
-}
-
-.arrow-container {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border: 1px solid #fff;
-}
-
-.arrow {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
 }
 
 .white_clr {
