@@ -52,10 +52,15 @@ img {
     margin-right: auto;
 }
 
-.section-container {
+.section-flex-container {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+}
+
+.section-grid-container {
+    display: grid;
+    grid-template-columns: 100%;
 }
 
 .button {
@@ -91,9 +96,13 @@ img {
     justify-content: center;
 }
 
-.mobile-hidden {
-    display: none;
+.ord__list {
+    list-style: none;
 }
+
+/* .mobile-hidden {
+    display: none;
+} */
 
 /* ==== subsections ==== */
 .sub {
@@ -122,7 +131,7 @@ img {
     opacity: 0.7;
 }
 
-.sub__text h4 {
+.sub__text_h4 {
     margin-bottom: 70px;
     font-weight: 700;
     text-transform: uppercase;
@@ -132,8 +141,30 @@ img {
     opacity: 0.6;
 }
 
-@media all and (min-width: 768px) {
+.mb_211 {
+    margin-bottom: 211px;
+}
 
+.pb_none {
+    padding-bottom: 0px;
+}
+@media all and (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media all and (min-width: 425px) {
+    .section-grid-container {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media all and (min-width: 720px) {
+    .section-grid-container {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
     .button {
         padding: 18px 35px;
         border: 1px solid transparent;
@@ -143,10 +174,6 @@ img {
 
     .row {
         flex-direction: row;
-    }
-
-    .mobile-hidden {
-        display: initial;
     }
 
     .desktop-hidden {
@@ -469,9 +496,193 @@ select {
    ======= section-3 =======
    ========================= */
 
+/* ==== grid layout ====*/
+.people {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+} 
+
+.lesson {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.schools {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.participants {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.chatting {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.partners {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+.hight_five {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}
+
+@media all and (min-width: 425px) {
+    .people {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    } 
+    
+    .lesson {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .schools {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .participants {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .chatting {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .partners {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    .hight_five {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+}
+
+@media all and (min-width: 720px) {
+    .people {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    } 
+    
+    .lesson {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .schools {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+    
+    .participants {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .chatting {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .partners {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    
+    .hight_five {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+}
+
+/* diamonds */
+.whitediamond-container {
+    position: absolute;
+}
+
+.bluediamond-container {
+    position: absolute;
+    display: none;
+}
+
+.diamond-left {
+    top: 36px;
+    left: -21px;
+}
+
+.diamond-right {
+    top: 36px;
+    right: -21px;
+}
+
+.sub:hover .whitediamond-container {
+    display: none;
+}
+
+.sub:hover .bluediamond-container {
+    display: initial;
+}
+
+/* people styles */
+.people {
+    padding-top: 150px;
+    padding-left: 210px;
+    padding-right: 20px;
+}
+
+.people-text-container h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #0536FC;
+    opacity: 0.9;
+}
+
+.people-text-container h3 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* images */
+.adaptive-image {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+@media all and (min-width: 768px) {
+
+    .people-text-container h2 {
+        font-size: 16px;
+    }
+
+    .people-text-container h3 {
+        font-size: 38px;
+    }
+}
 /* =========================
    ======= section-4 =======
    ========================= */
+
+/* ==== grid ====*/   
 
 /* =========================
    ======= section-8 =======
@@ -481,7 +692,7 @@ select {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
+    
 }
 
 /* .sub {
@@ -494,7 +705,7 @@ select {
     .subsections {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
     .sect8__flex {
