@@ -74,10 +74,6 @@ img {
     background-color:#0536fc8f;
 }
 
-.blue_bckgr {
-    background-color: #0536FC;
-}
-
 .arrow-container {
     width: 100px;
     height: 100px;
@@ -99,6 +95,43 @@ img {
     display: none;
 }
 
+/* ==== subsections ==== */
+.sub {
+    position: relative;
+    padding-top: 50px;
+    color: #000;
+}
+
+.sub:hover {
+    background-color: #0536FC;
+    color: #fff;
+}
+
+.sub__text {
+    margin-left: 20px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+}
+
+.sub__text p:first-child {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.sub__text h4 {
+    margin-bottom: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sub__text:last-child p {
+    opacity: 0.6;
+}
+
 @media all and (min-width: 768px) {
 
     .button {
@@ -118,6 +151,10 @@ img {
 
     .desktop-hidden {
         display: none;
+    }
+
+    .sub__text {
+        margin-left: 50px;
     }
 }
 
@@ -447,10 +484,10 @@ select {
     list-style: none;
 }
 
-.sect8__sub {
+/* .sub {
     position: relative;
     padding-top: 50px;
-}
+} */
 
 @media all and (min-width: 768px) {
 
@@ -460,14 +497,14 @@ select {
         justify-content:space-between;
     }
 
-    .sect8__sub {
+    .sect8__flex {
         flex-basis: 50%;
         flex-grow: 1;
     }
 }
 
 @media all and (min-width: 1270px) {
-    .sect8__sub {
+    .sect8__flex {
         flex-basis: 25%;
     }
 }
@@ -530,8 +567,8 @@ select {
 
 /* ==== subsections ==== */
 
-.sect8__sub__text {
-    margin-left: 50px;
+/* .sub__text {
+    margin-left: 20px;
     padding-right: 100px;
     padding-bottom: 150px;
     font-size: 16px;
@@ -540,28 +577,30 @@ select {
     color: #000;
 }
 
-.sect8__sub__text p:first-child {
+.sub__text p:first-child {
     margin-bottom: 30px;
     text-transform: uppercase;
     opacity: 0.7;
 }
 
-.sect8__sub__text h4 {
+.sub__text h4 {
     margin-bottom: 70px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.sect8__sub__text:last-child p {
+.sub__text:last-child p {
     opacity: 0.6;
+} */
+
+@media all and (min-width: 768px) {
+    .sub__text {
+        margin-left: 50px;
+    }
 }
 
-.white_clr {
-    color: #fff;
-}
-
-@media all and (min-width: 1075px) {
+/* @media all and (min-width: 1075px) {
     .greybgrd {
         border-right: 1px solid rgba(0, 0, 0, 0.15);
     }
-}
+} */
