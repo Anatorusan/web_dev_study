@@ -47,9 +47,17 @@ img {
 
 .wrapper {
     max-width: 1440px;
-    min-width: 365px;
+    /* min-width: 365px; */
     margin-left: auto;
     margin-right: auto;
+}
+
+.wrapper-s {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .section-flex-container {
@@ -80,9 +88,6 @@ img {
 }
 
 .arrow-container {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -94,6 +99,7 @@ img {
     display: flex;
     align-content: center;
     justify-content: center;
+    background-color: #fff;
 }
 
 .ord__list {
@@ -132,7 +138,7 @@ img {
     opacity: 0.6;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     .mobile-hidden {
         display: none;
     }
@@ -198,6 +204,10 @@ img {
     text-decoration: none;
 }
 
+.logo {
+    max-width: none;
+}
+
 .links-and-language-container {
     display: flex;
     justify-content: space-between;
@@ -213,13 +223,13 @@ img {
     display: flex;
 }
 
-.links-container li {
+.nav_li {
     list-style-type: none;
     margin-right: 0;
-    margin-right: 35px;
+    margin-right: 17px;
 }
 
-.links-container li::after {
+.nav_li::after {
     content: url('icons/arrow_dropdown_black.svg');
     padding-left: 10px;
 }
@@ -249,26 +259,25 @@ select {
 
 @media all and (min-width: 768px) {
 
-    .links-container li {
+    .nav_li {
         margin-right: 25px;
     }
 
-    .links-container li:nth-child(3) {
+    .partners-marg {
         margin-right: 50px;
     }
 
-    .links-container li:nth-child(6) {
+    .support {
         margin-right: 20px;
     }
-
 }
 
 @media all and (min-width: 905px) {
-    .links-container li {
+    .nav_li {
         margin-right: 50px;
     }
 
-    .links-container li:nth-child(3) {
+    .partners-marg {
         margin-right: 101px;
     }
 }
@@ -295,9 +304,10 @@ select {
 /* ==== program ===== */
 
 .program {
-    padding-left: 14.06%;
+    padding-left: 20px;
     padding-top: 8.06%;
     padding-bottom: 8%;
+    padding-right: 20px;
 }
 
 .program-text h2 {
@@ -338,12 +348,15 @@ select {
     position: relative;
     max-height: 320px;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 16 / 9; */
 }
 
 .boy {
     object-fit: cover;
     height: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-position: top;
 }
 
 .boy-and-plane img:last-child {
@@ -356,20 +369,18 @@ select {
     .boy-and-plane {
         max-height: initial;
     }
-
-    .boy {
-        object-fit: cover;
-        width: 720px;
-        height: 756px;
-    }
 }
 
 @media all and (min-width: 768px) {
+    .boy {
+        aspect-ratio: initial;
+    }
     .boy-and-plane {
-        max-width: 50%;
+        flex-basis: 50%;
     }
     .program {
-        max-width: 50%;
+        flex-basis: 50%;
+        padding-left: 14.06%;
     }
 
     .program-text h2 {
@@ -444,11 +455,11 @@ select {
 
 @media all and (min-width: 768px) {
     .tu {
-        max-width: 50%;
+        flex-basis: 50%;
     }
 
     .goal {
-        max-width: 50%;
+        flex-basis: 50%;
     }
 
     .goal h2 {
@@ -1039,17 +1050,16 @@ select {
 .hero-background {
     background: url('images/teacher-children.png') no-repeat center;
     background-size: cover;
-    min-width: 365px;
+    max-height: 575px;
 }
 
 .hero {
-    padding-top: 204px;
-    padding-bottom: 230px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .hero-text {
     color: #fff;
-    padding-left: 10px;
     max-width: 350px;
 }
 
@@ -1073,10 +1083,10 @@ select {
 
 @media all and (min-width: 768px) {
     .hero {
-        max-width: 1440px;
-        padding-left: 210px;
+        padding-top: 150px;
+        padding-bottom: 20%;
     }
-
+    
     .hero-text {
         max-width: 460px;
     }
