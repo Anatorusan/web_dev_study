@@ -641,13 +641,11 @@ select {
     line-height: 111%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #000000;
 }
 
 /* images */
 .adaptive-image {
     width: 100%;
-    
 }
 
 .img-left {
@@ -719,6 +717,19 @@ select {
 /* =========================
    ======= section-4 =======
    ========================= */
+/* general  */
+.sect4_p {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    opacity: 0.6;
+}
+
+@media all and (min-width: 768px) {
+    .sect4_p {
+        font-size: 16px;
+    }
+}
 
 /* ==== grid ====*/
 .together {
@@ -744,6 +755,97 @@ select {
 .case {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+}
+
+/* together */
+.together {
+    padding-top: 204px;
+    padding-left: 212px;
+}
+
+.together_p {
+    opacity: 0.35;
+}
+
+/* problematics */
+.problematics {
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-right: 180px;
+}
+
+.problematics_h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #0536FC;
+    opacity: 0.9;
+}
+
+.problematics_h3 {
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+    .problematics_h2 {
+        font-size: 16px;
+    }
+
+    .problematics_h3 {
+        font-size: 38px;
+    }
+}
+
+/* icons block */
+.icon_figures {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.icon_container {
+    margin-right: 35px;
+    padding-top: 15px; 
+}
+
+.big_figure {
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.que {
+    padding-right: 93px;
+    padding-top: 92px;
+    padding-bottom: 150px;
+}
+
+.que-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.grad_cap {
+    padding-right: 50px;
+    padding-top: 92px;
+    padding-bottom: 150px;
+}
+
+.case {
+    padding-right: 50px;
+    padding-top: 92px;
+    padding-bottom: 150px;
 }
 
 /* =========================
