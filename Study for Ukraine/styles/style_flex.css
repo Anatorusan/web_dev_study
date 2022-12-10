@@ -732,35 +732,112 @@ select {
 }
 
 /* ==== grid ====*/
-.together {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-}   
+
+
 
 .problematics {
-    grid-column: 3 / 5;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
-}
-
-.que {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
 }
 
 .grad_cap {
-    grid-column: 3 / 4;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
 .case {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.que {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+@media all and (min-width:425px) {
+    .problematics {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .grad_cap {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .case {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .que {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+}
+
+@media all and (min-width:720px) {
+    .problematics {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    
+    .grad_cap {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .case {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+    
+    .que {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+    }
+}
+
+@media all and (min-width: 870px) {
+    .problematics {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    
+    .que {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .grad_cap {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    
+    .case {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+}
+
+@media all and (min-width: 1025px) {
+    .together {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .problematics {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+    }
 }
 
 /* together */
 .together {
     padding-top: 204px;
     padding-left: 212px;
+    display: none;
 }
 
 .together_p {
@@ -769,10 +846,10 @@ select {
 
 /* problematics */
 .problematics {
-    padding-top: 150px;
-    padding-left: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
     padding-bottom: 10px;
-    padding-right: 180px;
+    padding-right: 20px;
 }
 
 .problematics_h2 {
@@ -803,6 +880,26 @@ select {
     .problematics_h3 {
         font-size: 38px;
     }
+
+    .problematics {
+        padding-right: 30px;
+        padding-top: 150px;
+    }
+}
+
+@media all and (min-width: 870px) {
+    .problematics {
+        padding-left: 50px;
+    }
+}
+
+@media all and (min-width: 1025px) {
+    .problematics {
+        padding-right: 180px;
+    }
+    .together {
+        display: initial;
+    }
 }
 
 /* icons block */
@@ -825,27 +922,87 @@ select {
 }
 
 .que {
-    padding-right: 93px;
-    padding-top: 92px;
-    padding-bottom: 150px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 
 .que-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .grad_cap {
     padding-right: 50px;
-    padding-top: 92px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 
 .case {
     padding-right: 50px;
-    padding-top: 92px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+.icon {
+    max-width: none;
+}
+
+@media all and (min-width: 450px) {
+    .case {
+        padding-left: 50px;
+    }
+
+    .que {
+        padding-left: 50px;
+    }
+
+    .que-container {
+        align-items: center;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .grad_cap {
+        padding-top: 92px;
+        padding-bottom: 150px;
+    }
+
+    .case {
+        padding-top: 92px;
+        padding-bottom: 150px;
+    }
+
+    .que {
+        padding-top: 92px;
+        padding-bottom: 150px;
+    }
+}
+
+@media all and (min-width: 870px) {
+    .que-container {
+        align-items: flex-start;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .que-container {
+        align-items: flex-end;
+    }
+
+    .que {
+        padding-right: 93px;
+    }
+
+    .grad_cap {
+        padding-left: 50px;
+    }
+
+
 }
 
 /* =========================
