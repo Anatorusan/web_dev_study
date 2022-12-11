@@ -1,47 +1,3 @@
-/* adding fonts */
-
-@font-face {
-    font-family: "ogg";
-    src: url('fonts/OggLight.woff') format("woff");
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "ogg";
-    src: url('fonts/OggLightItalic.woff') format("woff");
-    font-weight: 600;
-    font-style: italic;
-}
-
-/* @font-face {
-    font-family: "ogg";
-    src: url('fonts/OggMedium.woff') format("woff");
-    font-weight: medium;
-    font-style: normal;
-} */
-
-@font-face {
-    font-family: "ogg";
-    src: url('fonts/OggMediumItalic.woff') format("woff");
-    font-weight: 500;
-    font-style: italic;
-}
-
-/* @font-face {
-    font-family: "ogg";
-    src: url('fonts/OggRegular.woff') format("woff");
-    font-weight: normal;
-    font-style: normal;
-} */
-
-@font-face {
-    font-family: "Trade Gothic LT Extended";
-    src: url('fonts/Trade\ Gothic\ LT\ Extended.woff') format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* general styles */
 * {
     box-sizing: border-box;
@@ -111,13 +67,17 @@ img {
 
 /* text styles */
 .h2-container {
-    font-family: 'ogg';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 170%;
+    
     text-align: center;
     margin-bottom: 20px;
+}
+
+.h2-font {
+    font-family: 'ogg';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 110%;
 }
 
 .green-text {
@@ -127,7 +87,7 @@ img {
 .italic-text {
     font-family: 'ogg';
     font-style: italic;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .p-container {
@@ -165,9 +125,13 @@ img {
 
     .h2-container {
         margin-left: 75px;
-        font-size: 41px;
-        line-height: 170%;
+        
         max-width: 520px;
+    }
+
+    .h2-font {
+        font-size: 60px;
+        line-height: 107%;
     }
 
     .philosoph {
