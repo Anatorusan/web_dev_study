@@ -69,9 +69,7 @@ img {
 }
 
 .line {
-    display: block;
-    border-bottom: 1px solid #D0A049;
-    width: 96px;
+    margin-top: 10px;
 }
 
 .mobile-hidden {
@@ -139,14 +137,19 @@ img {
 }
 
 .line {
-    margin-right: 30px;
     margin-bottom: 10px;
 }
 
-.line-and-more a {
+.button {
     display: flex;
-    text-decoration: none;
+    gap: 30px;
     color: #CD9A3D;
+    font-family: "Trade Gothic LT Extended";
+    font-size: 16px;
+    line-height: 150%;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .line-and-more {
