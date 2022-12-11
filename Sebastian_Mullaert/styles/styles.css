@@ -34,13 +34,16 @@ img {
 
 .italic-text {
     font-style: italic;
-    font-weight: 300;
 }
+
+
 
 @media all and (max-width: 810px) {
     .mobile-hidden {
         display: none;
     }
+
+    
 }
 
 /* grid layout */
@@ -81,8 +84,7 @@ img {
     margin-bottom: 20px;
 }
 
-.h2-font {
-    font-style: normal;
+.section-header {
     font-weight: 300;
     font-size: 40px;
     line-height: 110%;
@@ -117,15 +119,14 @@ img {
 }
 
 .philosoph {
-    font-family: "Trade Gothic LT Extended";
     font-size: 14px;
     line-height: 21px;
     text-transform: capitalize;
     opacity: 0.55;
-    margin-right: 15px;
-    position: relative;
-    bottom: 15px;
+    vertical-align: text-top;
 }
+
+
 
 @media all and (min-width: 810px) {
     .text-container {
@@ -135,17 +136,15 @@ img {
     .h2-container {
         margin-left: 75px;
         max-width: 520px;
-    }
+    }    
 
-    .h2-font {
+    .section-header {
         font-size: 60px;
         line-height: 107%;
+        display: inline;
     }
 
-    
-
-    .italic-text {
-        font-style: italic;
+    .desktop-bold {
         font-weight: 500;
     }
 
