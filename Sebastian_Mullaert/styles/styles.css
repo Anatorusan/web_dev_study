@@ -48,8 +48,13 @@ img {
     }
 }
 
+/* 
+============================
+=====convergence of zen=====
+============================ */
+
 /* grid layout */
-.section-container {
+.section-1-container {
     display: grid;
     grid-template-columns: 100%;
 }
@@ -70,7 +75,7 @@ img {
 } */
 
 @media all and (min-width: 1200px){
-    .section-container {
+    .section-1-container {
         grid-template-columns: 50% 50%;
     }
     
@@ -287,3 +292,9 @@ img {
         display: block;
     }
 } */
+
+/* 
+========================
+=====send and email=====
+======================== */
+

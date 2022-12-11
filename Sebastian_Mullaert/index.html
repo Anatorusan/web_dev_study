@@ -11,7 +11,7 @@
 <body>
     <section>
         <div class="wrapper">
-            <div class="section-container">
+            <div class="section-1-container">
                 <div class="text-container">
                     <div class="h2-container">
                         <span class="philosoph mobile-hidden">(Philosophy)</span>
@@ -48,6 +48,46 @@
                         <img class="small-picture" src="images/man_lies.jpg" alt="Man lies on the grass" 
                         width="260" height="326"/>
                     </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- send an email -->
+    <section>
+        <div class="wrapper">
+            <div class="section-2-container">
+                <div class="booking-container">
+                    <span>(Booking)</span>
+                </div>
+                <div class="email-container">
+                    <div class="section-2-text-container">
+                        <h2>Send <span>an email</span></h2>
+                        <p>If you have a general or project enquiry, please 
+                            drop me an email — available now</p>
+                    </div>
+                    <div class="form-container">
+                        <form>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="message">Message</label>
+                            <input type="text" id="message" name="message"><br>
+                            <label for="project">Project type</label>
+                            <select id="project" name="project">
+                                <option value="Reserve for personal event">Reserve for personal event</option>
+                                <option value="Buy tickets for the next concert">Buy tickets for the next concert</option>
+                                <option value="Reserve from a venue">Reserve from a venue</option>
+                                <option value="Other">Other</option>
+                            </select><br>
+                            <input type="checkbox" id="consent" name="consent" value="consent">
+                            <label for="consent">I agree to receive ocasional newsletter with latest news and updates</label>
+                            <button class="button" onclick="alert('Your message is sent')"><svg class="line" width="84" height="3" viewBox="0 0 84 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M42.672 0.903998C22.704 0.903998 5.52 0.615999 0.72 0.328C0.144 0.808 0.0480001 2.248 0.816 2.632C5.904 2.248 21.84 1.96 42.48 1.96C63.12 1.96 77.904 2.248 83.184 2.632C83.76 2.248 83.856 0.808 83.088 0.328C78.48 0.615999 62.64 0.903998 42.672 0.903998Z" fill="#D0A049"/>
+                                </svg>
+                            <p>Send</p></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
