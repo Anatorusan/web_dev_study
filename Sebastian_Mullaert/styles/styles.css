@@ -88,6 +88,7 @@ img {
     font-weight: 300;
     font-size: 40px;
     line-height: 110%;
+    vertical-align: text-top;
 }
 
 .p-container {
@@ -123,7 +124,6 @@ img {
     line-height: 21px;
     text-transform: capitalize;
     opacity: 0.55;
-    vertical-align: text-top;
 }
 
 
