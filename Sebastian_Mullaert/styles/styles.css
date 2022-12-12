@@ -36,15 +36,19 @@ img {
     font-style: italic;
 }
 
+.block {
+    display: block;
+}
+
 @media all and (min-width: 1200px) {
     .wrapper {
-        max-width: 1360px;
+        max-width: 1320px;
     }
 }
 
 @media all and (max-width: 1200px) {
     .mobile-hidden {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -297,4 +301,89 @@ img {
 ========================
 =====send and email=====
 ======================== */
+
+/* layout */
+.section-2-container {
+    display: flex;
+    padding-top: 200px;
+}
+
+.booking-container {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.email-container {
+    flex-basis: 100%;
+    padding-bottom: 145px;
+}
+
+/* .form-container {
+    width: 69%;
+} */
+
+@media all and (min-width: 1200px) {
+    .email-container {
+        flex-basis: 75%;
+        padding-left: 75px;
+    }
+
+    .form-container {
+        width: 69%;
+    }
+}
+
+
+
+/* send and email */
+.section-2-text-container {
+    padding-bottom: 100px;
+}
+
+.send_email {
+    margin-bottom: 100px;
+}
+
+.sect-2_para {
+    margin-left: 150px;
+}
+
+/* form */
+.form_label_margin {
+    margin-bottom: 20px;
+}
+
+.form_input_margin {
+    margin-bottom: 50px;
+}
+
+.input_length {
+    width: 100%;
+}
+
+.button_m {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input_border {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.55)
+}
+
+@media all and (min-width: 1200px) {
+    .button_m {
+        margin-left: 157px;
+        margin-right: 0;
+    }
+}
+
+/* .form-newline::after {
+    content:"\a";
+    white-space: pre;
+} */
 
