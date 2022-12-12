@@ -61,31 +61,32 @@
                 </div>
                 <div class="email-container">
                     <div class="section-2-text-container">
-                        <h2 class="send_email">Send <span>an email</span></h2>
+                        <h2 class="send_email font-special">Send <span class="italic-text">an email</span></h2>
                         <p class="sect-2_para">If you have a general or project enquiry, please<br> 
                             drop me an email — available now</p>
                     </div>
                     <div class="form-container">
                         <form class="form">
-                            <label for="email" class="block form_label_margin">Email</label>
-                            <input type="email" id="email" name="email" class="form_input_margin 
-                            input_length input_border">
-                            <label for="name" class="block form_label_margin">Name</label>
-                            <input type="text" id="name" name="name" class="form_input_margin
-                             input_length input_border">
-                            <label for="message" class="block form_label_margin">Message</label>
-                            <input type="text" id="message" name="message" class="form_input_margin
-                             input_length input_border">
-                            <label for="project" class="block form_label_margin">Project type</label>
+                            <label for="email" class="block form_label_margin font-special label-font">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" class="form_input_margin 
+                            input_length input_border placeh-font">
+                            <label for="name" class="block form_label_margin font-special label-font">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" class="form_input_margin
+                             input_length input_border placeh-font">
+                            <label for="message" class="block form_label_margin font-special label-font">Message</label>
+                            <input type="text" id="message" name="message" placeholder="Start typing here" class="form_input_margin
+                             input_length input_border placeh-font">
+                            <label for="project" class="block form_label_margin font-special label-font">Project type</label>
                             <select id="project" name="project" class="form_input_margin
-                             input_length input_border">
+                             input_length input_border select_placeh select_opt" required>
+                                <option value="" disabled selected hidden>Choose</option>
                                 <option value="Reserve for personal event">Reserve for personal event</option>
                                 <option value="Buy tickets for the next concert">Buy tickets for the next concert</option>
                                 <option value="Reserve from a venue">Reserve from a venue</option>
                                 <option value="Other">Other</option>
                             </select>
-                            <div class="form_input_margin" input_length><input type="checkbox" id="consent" name="consent" value="consent">
-                            <label for="consent">I agree to receive ocasional newsletter with latest news and updates</label></div>
+                            <div class="form_input_margin"><input type="checkbox" id="consent" name="consent" value="consent">
+                            <label for="consent" class="font-special label-font">I agree to receive ocasional newsletter with latest news and updates</label></div>
                             <button class="button button_m" onclick="alert('Your message is sent')"><svg class="line" width="84" height="3" viewBox="0 0 84 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M42.672 0.903998C22.704 0.903998 5.52 0.615999 0.72 0.328C0.144 0.808 0.0480001 2.248 0.816 2.632C5.904 2.248 21.84 1.96 42.48 1.96C63.12 1.96 77.904 2.248 83.184 2.632C83.76 2.248 83.856 0.808 83.088 0.328C78.48 0.615999 62.64 0.903998 42.672 0.903998Z" fill="#D0A049"/>
                                 </svg>
