@@ -186,26 +186,45 @@ img {
     letter-spacing: -0.03em;
 }
 
+.navbar-container_pad {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .logo-container {
     margin-left: 3.5%;
     margin-right: 3.4%;
 }
 
-.logo-container a {
+/* .logo-container a {
     display: flex;
     align-items: center;
+} */
+
+.logo__figure {
+    position: relative;
 }
 
-.logo-container a p {
+.logo__caption {
     display: none;
+    margin-left: 40px;
 }
 
-.logo-container a {
+.logo__link {
     text-decoration: none;
 }
 
-.logo {
+.logo__image_no-mxwdth {
     max-width: none;
+}
+
+.logo__figure {
+    position: relative;
+}
+
+.logo__image-container {
+    position: absolute;
+    top: 7px;
 }
 
 .links-and-language-container {
@@ -219,13 +238,12 @@ img {
     align-items: center;
 }
 
-.links-container ul {
+.links-container__ul {
     display: flex;
 }
 
 .nav_li {
     list-style-type: none;
-    margin-right: 0;
     margin-right: 17px;
 }
 
@@ -234,7 +252,7 @@ img {
     padding-left: 10px;
 }
 
-.links-container a {
+.links-container__link {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
@@ -255,6 +273,14 @@ select {
     text-transform: uppercase;
     opacity: 0.85;
     border: 1px solid transparent;
+}
+
+.school {
+    margin-left: 40px;
+}
+
+.menu {
+    margin-left: 40px;
 }
 
 @media all and (min-width: 768px) {
@@ -283,7 +309,7 @@ select {
 }
 
 @media all and (min-width: 1120px) {
-    .logo-container a p {
+    .logo__caption {
         display: block;
         padding-left: 10px;
         color: #000;
@@ -294,6 +320,10 @@ select {
     .logo-container {
         margin-left: 3.5%;
         margin-right: 6.3%;
+    }
+
+    .school {
+        margin-left: 0px;
     }
 }
 
