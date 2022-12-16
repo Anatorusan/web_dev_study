@@ -195,11 +195,6 @@ img {
     margin-right: 3.4%;
 }
 
-/* .logo-container a {
-    display: flex;
-    align-items: center;
-} */
-
 .logo__figure {
     position: relative;
 }
@@ -297,7 +292,7 @@ select {
     }
 }
 
-@media all and (min-width: 905px) {
+@media all and (min-width: 960px) {
     .nav_li {
         margin-right: 50px;
     }
@@ -307,7 +302,7 @@ select {
     }
 }
 
-@media all and (min-width: 1120px) {
+@media all and (min-width: 1205px) {
     .logo__caption {
         display: block;
         padding-left: 10px;
