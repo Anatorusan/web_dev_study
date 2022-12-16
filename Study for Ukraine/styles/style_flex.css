@@ -47,7 +47,6 @@ img {
 
 .wrapper {
     max-width: 1440px;
-    /* min-width: 365px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -639,7 +638,7 @@ select {
 }
 
 /* triangles */
-.tr-container {
+/* .tr-container {
     position: absolute;
 }
 
@@ -677,7 +676,7 @@ select {
 
 .sub_hover:hover .white-tr-right {
     border-left: 20px solid #0536FC;
-}
+} */
 
 /* people styles */
 .people {
@@ -720,6 +719,47 @@ select {
         object-fit: cover;
         height: 100%;
     }
+
+    /* triangles */
+.tr-container {
+    position: absolute;
+}
+
+.white-tr-left {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #FFFFFF;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.white-tr-right {
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #FFFFFF;
+}
+
+.tr-left {
+    top: 36px;
+    left: -40px;
+}
+
+.tr-right {
+    top: 36px;
+    right: -40px;
+}
+
+.sub_hover:hover .white-tr-left {
+    border-right: 20px solid #0536FC;
+}
+
+.sub_hover:hover .white-tr-right {
+    border-left: 20px solid #0536FC;
+}
 }
 
 @media all and (min-width: 768px) {
