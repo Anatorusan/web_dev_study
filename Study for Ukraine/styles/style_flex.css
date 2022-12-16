@@ -816,7 +816,7 @@ select {
    ======= section-4 =======
    ========================= */
 /* general  */
-.sect4_p {
+.problem__text {
     font-size: 14px;
     line-height: 150%;
     letter-spacing: -0.03em;
@@ -824,7 +824,7 @@ select {
 }
 
 @media all and (min-width: 768px) {
-    .sect4_p {
+    .problem__text {
         font-size: 16px;
     }
 }
@@ -832,89 +832,13 @@ select {
 /* ==== grid ====*/
 
 .problematics {
-    grid-column: 1 / 2;
+    grid-column: 1 / 5;
     grid-row: 1 / 2;
 }
 
-.grad_cap {
-    grid-column: 1 / 2;
+.list-container {
+    grid-column: 1 / 5;
     grid-row: 2 / 3;
-}
-
-.case {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
-.que {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-}
-
-@media all and (min-width:425px) {
-    .problematics {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
-    
-    .grad_cap {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    
-    .case {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    
-    .que {
-        grid-column: 1 / 3;
-        grid-row: 3 / 4;
-    }
-}
-
-@media all and (min-width:720px) {
-    .problematics {
-        grid-column: 1 / 5;
-        grid-row: 1 / 2;
-    }
-    
-    .grad_cap {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-    }
-    
-    .case {
-        grid-column: 3 / 5;
-        grid-row: 2 / 3;
-    }
-    
-    .que {
-        grid-column: 1 / 5;
-        grid-row: 3 / 4;
-    }
-}
-
-@media all and (min-width: 870px) {
-    .problematics {
-        grid-column: 1 / 5;
-        grid-row: 1 / 2;
-    }
-    
-    .que {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-    }
-    
-    .grad_cap {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-    }
-    
-    .case {
-        grid-column: 4 / 5;
-        grid-row: 2 / 3;
-    }
 }
 
 @media all and (min-width: 1025px) {
@@ -941,7 +865,6 @@ select {
 }
 
 /* problematics */
-
 
 .problematics {
     padding-top: 50px;
@@ -995,27 +918,39 @@ select {
     .text-container-section-4 {
         max-width: 488px;
     }
-    
-    /* .problematics {
-        padding-right: 180px; */
-    }
+
     .together {
         display: initial;
     }
 }
 
 /* icons block */
-.icon_figures {
+.problems-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.icon-figures-container {
     display: flex;
     margin-bottom: 50px;
 }
 
-.icon_container {
+.icon-container {
     margin-right: 35px;
     padding-top: 15px; 
 }
 
-.big_figure {
+.problem__figure {
     font-weight: 500;
     font-size: 100px;
     line-height: 100%;
@@ -1023,88 +958,36 @@ select {
     text-transform: uppercase;
 }
 
-.que {
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-}
-
-.que-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.grad_cap {
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-}
-
-.case {
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-}
-
-.icon {
+.problem__icon {
     max-width: none;
 }
 
-@media all and (min-width: 450px) {
-    .case {
-        padding-left: 50px;
+@media all and (min-width: 660px) {
+    .problems-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
     }
 
-    .que {
-        padding-left: 50px;
-    }
-
-    .que-container {
-        align-items: center;
-    }
-}
-
-@media all and (min-width: 768px) {
-    .grad_cap {
-        padding-top: 92px;
-        padding-bottom: 150px;
-    }
-
-    .case {
-        padding-top: 92px;
-        padding-bottom: 150px;
-    }
-
-    .que {
-        padding-top: 92px;
+    .list-container {
+        padding-top: 70px;
         padding-bottom: 150px;
     }
 }
 
-@media all and (min-width: 870px) {
-    .que-container {
-        align-items: flex-start;
+@media all and (min-width: 1025px) {
+    .problems-list {
+        list-style: none;
+        display: flex;
+        gap: 11.5%;
+        justify-content: flex-end;
     }
-}
-
-@media all and (min-width: 1000px) {
-    .que-container {
-        align-items: flex-end;
+    
+    .list-container {
+        padding-right: 140px;
+        padding-top: 70px;
+        padding-bottom: 150px;
     }
-
-    .que {
-        padding-right: 93px;
-    }
-
-    .grad_cap {
-        padding-left: 50px;
-    }
-
-
 }
 
 /* =========================
