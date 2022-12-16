@@ -340,6 +340,11 @@ select {
     padding-right: 20px;
 }
 
+.program-text {
+    max-width: 498px;
+    margin-left: auto;
+}
+
 .program-text h2 {
     font-weight: 700;
     font-size: 14px;
@@ -410,7 +415,6 @@ select {
     }
     .program {
         flex-basis: 50%;
-        padding-left: 14.06%;
     }
 
     .program-text h2 {
@@ -446,8 +450,13 @@ select {
 .goal {
     padding-top: 10.4%;
     padding-left: 3.5%;
-    padding-right: 18.18%;
     padding-bottom: 10.4%;
+    padding-right: 20px;
+}
+
+.goal__text-cotainer {
+    max-width: 408px;
+    margin-right: auto;
 }
 
 .goal h2 {
@@ -634,14 +643,23 @@ select {
     position: absolute;
 }
 
-.bluediamond-container {
+/* .bluediamond-container {
     position: absolute;
     display: none;
+} */
+    
+.white-tr-left {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #FFFFFF;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
 }
 
-.diamond-left {
+.tr-left {
     top: 36px;
-    left: -21px;
+    left: -40px;
 }
 
 .diamond-right {
@@ -649,13 +667,17 @@ select {
     right: -21px;
 }
 
-.sub:hover .whitediamond-container {
-    display: none;
+.sub_hover:hover .white-tr-left {
+    border-right: 20px solid #0536FC;
 }
 
-.sub:hover .bluediamond-container {
+/* .sub:hover .whitediamond-container {
+    display: none;
+} */
+
+/* .sub:hover .bluediamond-container {
     display: initial;
-}
+} */
 
 /* people styles */
 .people {
