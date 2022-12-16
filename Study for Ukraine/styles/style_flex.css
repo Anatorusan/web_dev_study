@@ -831,8 +831,6 @@ select {
 
 /* ==== grid ====*/
 
-
-
 .problematics {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -943,6 +941,8 @@ select {
 }
 
 /* problematics */
+
+
 .problematics {
     padding-top: 50px;
     padding-left: 20px;
@@ -980,7 +980,7 @@ select {
     }
 
     .problematics {
-        padding-right: 30px;
+        /* padding-right: 30px; */
         padding-top: 150px;
     }
 }
@@ -992,8 +992,12 @@ select {
 }
 
 @media all and (min-width: 1025px) {
-    .problematics {
-        padding-right: 180px;
+    .text-container-section-4 {
+        max-width: 488px;
+    }
+    
+    /* .problematics {
+        padding-right: 180px; */
     }
     .together {
         display: initial;
