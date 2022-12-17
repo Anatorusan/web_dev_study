@@ -241,29 +241,33 @@ img {
 .section-2-container {
     display: flex;
     padding-top: 200px;
+    justify-content: center;
+    gap: 110px;
 }
 
 .booking-container {
-    flex-basis: 25%;
+    /* flex-basis: 25%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 40px;
+    padding-right: 40px; */
+    
 }
 
 .email-container {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     padding-bottom: 145px;
+    max-width: 605px;
 }
 
 @media all and (min-width: 1200px) {
-    .email-container {
+    /* .email-container {
         flex-basis: 75%;
         padding-left: 75px;
-    }
+    } */
 
-    .form-container {
+    /* .form-container {
         width: 69%;
-    }
+    } */
 }
 
 
@@ -288,6 +292,7 @@ img {
     line-height: 175%;
     color: #71870E;
     opacity: 0.85;
+    margin-right: 30px;
 }
 
 .send_email {
