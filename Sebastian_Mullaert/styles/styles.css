@@ -1,5 +1,7 @@
 /* general styles */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -14,6 +16,14 @@ img {
     max-width: 100%;
     display: block;
     height: auto;
+}
+
+select {
+    appearance: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
 }
 
 .wrapper {
@@ -245,13 +255,13 @@ img {
     gap: 110px;
 }
 
-.booking-container {
-    /* flex-basis: 25%;
+/* .booking-container {
+    flex-basis: 25%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 40px; */
+    padding-right: 40px;
     
-}
+} */
 
 .email-container {
     /* flex-basis: 100%; */
@@ -324,6 +334,32 @@ img {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid rgba(0,0,0,0.55)
+}
+
+.select-container {
+    font-size: 16px;
+    font-family: "Trade Gothic LT Extended", Georgia, 'Times New Roman', Times, serif;
+    color: rgba(196,196,196,0.7);
+    line-height: 24px;
+    cursor: pointer;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+}
+
+.select-container::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #000000;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+    margin-bottom: -25px;
+}
+
+.select-container,
+.select-container::after {
+    grid-area: select;
 }
 
 .select_placeh:invalid {
