@@ -255,10 +255,6 @@ img {
     padding-bottom: 145px;
 }
 
-/* .form-container {
-    width: 69%;
-} */
-
 @media all and (min-width: 1200px) {
     .email-container {
         flex-basis: 75%;
