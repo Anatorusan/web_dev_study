@@ -60,27 +60,12 @@ img {
 /* grid layout */
 .section-1-container {
     display: grid;
-    grid-template-columns: 100%;
-}
-
-.text-container {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.images-container {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-template-columns: 1fr;
 }
 
 @media all and (min-width: 1200px){
     .section-1-container {
-        grid-template-columns: 50% 50%;
-    }
-    
-    .images-container {
-        grid-column: 2/3;
-        grid-row: 1/2;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
