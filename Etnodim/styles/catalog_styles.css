@@ -55,6 +55,10 @@ a {
     padding-right: 10px;
 }
 
+.bg-white {
+    background-color: #fff;
+}
+
 .wrapper {
     padding: 0 20px;
     margin-left: auto;
@@ -70,6 +74,30 @@ a {
     background: none;
     border: 1px solid transparent;
     cursor: pointer;
+}
+
+.dsp-non {
+    display: none;
+}
+
+.brdr-dem {
+    border: 1px solid #000;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.sps-ard {
+    justify-content: space-around;
 }
 
 @media (max-width: 768px) { 
@@ -252,4 +280,52 @@ elements layout and styles
     .nb-list-2 {
         gap: 10px;
     }
+}
+
+/* catalog-dropdown */
+.catal:checked ~ .desk-drop {
+    max-height: 320px;
+}
+
+.desk-drop {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    top: 100px;
+    width: 100%;
+}
+
+.pop-desk-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 2fr 2fr;
+}
+
+/* mobile-dropdown */
+.burg:checked ~ .mob-drop {
+    max-height: 326px;
+}
+
+.mob-drop {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    width: 94%;
+}
+
+.pop-mob-lang-list {
+    flex: 1;
+    justify-content: center;
+}
+
+.pop-mob-cur-list {
+    flex: 1;
+    justify-content: center;
+}
+
+.pop-mob-lang-list__item {
+    margin-left: 15%;
+}
+
+.pop-mob-cur-list__item {
+    margin-right: 15%;
 }
