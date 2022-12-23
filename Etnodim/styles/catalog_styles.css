@@ -39,11 +39,37 @@ a {
     cursor: pointer;
 }
 
+.pt-4 {
+    padding-top: 4px;
+}
+
+.pt-5 {
+    padding-top: 5px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.pr-10mob {
+    padding-right: 10px;
+}
+
 .wrapper {
     padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
+}
+
+.select {
+    border: none;
+}
+
+.button-tr {
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) { 
@@ -56,6 +82,12 @@ a {
     .desktop-hidden { 
         display: none; 
     } 
+}
+
+@media all and (min-width: 890px) {
+    .pr-10mob {
+        padding-right: 0;
+    }
 }
 
 /* basic layout */
@@ -174,5 +206,50 @@ a {
     .social-net-container {
         grid-column: 4 / 5;
         grid-row: 2 / 3;
+    }
+}
+
+/*========================
+elements layout and styles
+==========================*/
+
+/* ===navbar=== */
+
+.navbar {
+    padding: 25px 0;
+}
+
+.nb-container-1 {
+    display: flex;
+    align-items: center;
+}
+
+.nb-container-2 {
+    display: flex;
+    align-items: center;
+}
+
+.nb-list-1 {
+    display: flex;
+    gap: 10px;
+}
+
+.nb-list-2 {
+    display: flex;
+}
+
+.currency-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media all and (min-width: 890px) {
+    .nb-list-1 {
+        gap: 30px;
+    }
+    
+    .nb-list-2 {
+        gap: 10px;
     }
 }
