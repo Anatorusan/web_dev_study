@@ -120,6 +120,10 @@ a {
     justify-content: space-around;
 }
 
+.sps-btw {
+    justify-content: space-between;
+}
+
 .mx-hg-0 {
     max-height: 0;
 }
@@ -347,6 +351,56 @@ elements layout and styles
 }
 
 /* mobile-dropdown */
+.burg-ico {
+    position: relative;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+.burg-middle {
+    height: 1px;
+    width: 20px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.burg-top {
+    bottom: 3px;
+    height: 1px;
+    width: 20px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.burg-bottom {
+    top: 4px;
+    height: 1px;
+    width: 10px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.burg:checked ~ .burg-lbl .burg-ico .burg-top {
+    transform: rotate(-45deg);
+    transform-origin: right;
+    top: -7.20px;
+}
+
+.burg:checked ~ .burg-lbl .burg-ico .burg-bottom {
+    transform: rotate(45deg);
+    width: 20px;
+    transform-origin: right;
+    top: 7.20px;
+}
+
+.burg:checked ~ .burg-lbl .burg-ico .burg-middle {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
 .burg:checked ~ .mob-drop {
     max-height: 326px;
 }
@@ -376,6 +430,11 @@ elements layout and styles
 }
 
 .pop-mob-cur-list__item {
+    margin-right: 15%;
+}
+
+.pop-mob-v-line {
+    margin-left: 15%;
     margin-right: 15%;
 }
 
