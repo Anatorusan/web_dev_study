@@ -84,6 +84,10 @@ a {
     border: 1px solid #000;
 }
 
+.brdr-non {
+    border: none;
+}
+
 .pos-rel {
     position: relative;
 }
@@ -328,4 +332,36 @@ elements layout and styles
 
 .pop-mob-cur-list__item {
     margin-right: 15%;
+}
+
+/* crumbs */
+.crumbs-list {
+    padding-top: 10px;
+    padding-bottom: 44px;
+}
+
+.crumbs-list__item {
+    display: flex;
+    align-items: center;
+}
+
+.crumbs-list__item::after {
+    content: url('/Etnodim/icons/crumb.svg');
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.crumbs-list__item_last::after {
+    content: "";
+}
+
+/* sort on desktop */
+.sort-container {
+    gap: 10px;
+    align-items: center;
+}
+
+/* filters and sort on mobile */
+.filters-and-sort {
+    justify-content: space-between;
 }
