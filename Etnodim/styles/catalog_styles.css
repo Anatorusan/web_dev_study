@@ -80,16 +80,20 @@ a {
     display: none;
 }
 
+.pos-abs {
+    position: absolute;
+}
+
+.pos-rel {
+    position: relative;
+}
+
 .brdr-dem {
     border: 1px solid #000;
 }
 
 .brdr-non {
     border: none;
-}
-
-.pos-rel {
-    position: relative;
 }
 
 .ml-auto {
@@ -100,8 +104,20 @@ a {
     display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
 .sps-ard {
     justify-content: space-around;
+}
+
+.mx-hg-0 {
+    max-height: 0;
+}
+
+.ovf-hdn {
+    overflow: hidden;
 }
 
 @media (max-width: 768px) { 
@@ -295,7 +311,7 @@ elements layout and styles
     position: absolute;
     max-height: 0;
     overflow: hidden;
-    top: 100px;
+    top: 99px;
     width: 100%;
 }
 
@@ -314,6 +330,7 @@ elements layout and styles
     max-height: 0;
     overflow: hidden;
     width: 94%;
+    z-index: 2;
 }
 
 .pop-mob-lang-list {
@@ -361,7 +378,62 @@ elements layout and styles
     align-items: center;
 }
 
+/* filters on desktop */
+.size-desk:checked ~ .sizes {
+    max-height: 180px;
+}
+
+.color-desk:checked ~ .colors {
+    max-height: 110px;
+}
+
+.season-desk:checked ~ .seasons {
+    max-height: 45px;
+}
+
+.fabric-desk:checked ~ .fabrics {
+    max-height: 45px;
+}
+
+.sleeve-desk:checked ~ .sleeves {
+    max-height: 45px;
+}
+
 /* filters and sort on mobile */
 .filters-and-sort {
     justify-content: space-between;
+}
+
+.filters-mob-switch:checked ~ .filters-container{
+    max-height: 545px;
+}
+
+.filters-container {
+    grid-template-columns: 1fr 0.85fr;
+    width: 93%;
+}
+
+.size-filter-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.color-filter-container {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.season-filter-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.fabric-filter-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.sleeve-filter-container {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }

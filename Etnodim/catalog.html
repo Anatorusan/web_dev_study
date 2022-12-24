@@ -208,18 +208,18 @@
             <!-- aside -->
             <div class="aside-container mobile-hidden">
                 <aside>
-                    <!-- filers block -->
+                    <!-- filers block on desktop -->
                     <div class="filters-container">
                         <div class="size-filter-container">
                             <form>
                                 <div class="size-check-container">
-                                    <input type="checkbox" id="size" value="size" name="size">
+                                    <input class="size-desk dsp-non" type="checkbox" id="size" value="size" name="size">
                                     <label for="size">Розмір <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1L5 5L9 1" stroke="black"/>
                                         </svg>
                                         </span>
                                     </label>
-                                    <div class="sizes">
+                                    <div class="sizes mx-hg-0 ovf-hdn">
                                         <ul class="sizes-list">
                                             <li>
                                                 <input type="checkbox" id="XXS" value="XXS" name="XXS">
@@ -261,13 +261,13 @@
                         <div class="color-filter-container">
                             <form>
                                 <div class="color-check-container">
-                                    <input type="checkbox" id="color" value="color" name="color">
+                                    <input class="color-desk dsp-non" type="checkbox" id="color" value="color" name="color">
                                     <label for="color">Колір <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1L5 5L9 1" stroke="black"/>
                                         </svg>
                                         </span>
                                     </label>
-                                    <div class="colors">
+                                    <div class="colors mx-hg-0 ovf-hdn">
                                         <ul class="colors-list">
                                             <li>
                                                 <input type="checkbox" id="white" value="white" name="white">
@@ -297,13 +297,13 @@
                         <div class="season-filter-container">
                             <form>
                                 <div class="season-check-container">
-                                    <input type="checkbox" id="season" value="season" name="season">
+                                    <input class="season-desk dsp-non" type="checkbox" id="season" value="season" name="season">
                                     <label for="season">Сезон <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1L5 5L9 1" stroke="black"/>
                                         </svg>
                                         </span>
                                     </label>
-                                    <div class="seasons">
+                                    <div class="seasons mx-hg-0 ovf-hdn">
                                         <ul class="seasons-list">
                                             <li>
                                                 <input type="checkbox" id="easy" value="easy" name="easy">
@@ -321,13 +321,13 @@
                         <div class="fabric-filter-container">
                             <form>
                                 <div class="fabric-check-container">
-                                    <input type="checkbox" id="fabric" value="fabric" name="fabric">
-                                    <label for="season">Тканина <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <input class="fabric-desk dsp-non" type="checkbox" id="fabric" value="fabric" name="fabric">
+                                    <label for="fabric">Тканина <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1L5 5L9 1" stroke="black"/>
                                         </svg>
                                         </span>
                                     </label>
-                                    <div class="fabrics">
+                                    <div class="fabrics mx-hg-0 ovf-hdn">
                                         <ul class="fabrics-list">
                                             <li>
                                                 <input type="checkbox" id="linen" value="linen" name="linen">
@@ -345,13 +345,13 @@
                         <div class="sleeve-filter-container">
                             <form>
                                 <div class="sleeve-check-container">
-                                    <input type="checkbox" id="sleeve" value="sleeve" name="sleeve">
+                                    <input class="sleeve-desk dsp-non" type="checkbox" id="sleeve" value="sleeve" name="sleeve">
                                     <label for="sleeve">Рукав <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1L5 5L9 1" stroke="black"/>
                                         </svg>
                                         </span>
                                     </label>
-                                    <div class="sleeves">
+                                    <div class="sleeves mx-hg-0 ovf-hdn">
                                         <ul class="sleeves-list">
                                             <li>
                                                 <input type="checkbox" id="long" value="long" name="long">
@@ -396,20 +396,6 @@
                                 </svg>
                             </div>
                             <div class="mobile-hidden">
-                                <!-- <input class="sort-container__check" type="checkbox" id="sort" value="sort" name="sort">
-                                <label for="sort">Сортувати за <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L5 5L9 1" stroke="black"/>
-                                    </svg>
-                                    </span>
-                                </label>
-                                <div class="sort-options mobile-hidden">
-                                    <ul>
-                                        <li>новинки</li>
-                                        <li>зростаючою ціною</li>
-                                        <li>спадаючою ціною</li>
-                                        <li>замовчуванням</li>
-                                    </ul>
-                                </div> -->
                                 <form>
                                     <label>Сортувати за:</label>
                                     <select class="brdr-non" id="sort-desk" name="sort-desk">
@@ -427,18 +413,18 @@
                         </div>
                     </div>
                     <!-- filters dropdown and sort select for mobile -->
-                    <div class="desktop-hidden">
+                    <div class="desktop-hidden pos-rel">
                         <div class="filters-and-sort flex">
-                            <div class="filters-tab">
+                            <div class="filters-tab ">
                                 <form>
-                                    <input type="checkbox" id="size" value="size" name="size">
-                                    <label for="size">Фільтри <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <input class="filters-mob-switch dsp-non" type="checkbox" id="filters-mob" value="size" name="size">
+                                    <label for="filters-mob">Фільтри <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1L5 5L9 1" stroke="black"/>
                                         </svg>
                                         </span>
                                     </label>
-                                    <div class="filters-container">
-                                        <div class="size-container">
+                                    <div class="filters-container mx-hg-0 ovf-hdn pos-abs bg-white grid">
+                                        <div class="size-filter-container">
                                             <div>
                                                 <p>Розмір</p>
                                             </div>
@@ -479,7 +465,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="color-filter">
+                                        <div class="color-filter-container">
                                             <div>
                                                 <p>Колір</p>
                                             </div>
@@ -563,22 +549,6 @@
                                 </form>
                             </div>        
                             <div class="sort-container desktop-hidden">
-                                <!-- <div class="sort-container__check">
-                                    <input type="checkbox" id="sort" value="sort" name="sort">
-                                    <label for="season">Сортувати за <span><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1L5 5L9 1" stroke="black"/>
-                                        </svg>
-                                        </span>
-                                    </label>
-                                    <div class="sort-options">
-                                        <ul>
-                                            <li>новинки</li>
-                                            <li>зростаючою ціною</li>
-                                            <li>спадаючою ціною</li>
-                                            <li>замовчуванням</li>
-                                        </ul>
-                                    </div>
-                                </div> -->
                                 <form>
                                     <label>Сортувати за:</label>
                                     <select class="brdr-non" id="sort-desk" name="sort-desk">
