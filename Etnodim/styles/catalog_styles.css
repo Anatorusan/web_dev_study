@@ -317,6 +317,7 @@ elements layout and styles
     overflow: hidden;
     top: 99px;
     width: 100%;
+    transition: all 0.5s ease 0.1s;
 }
 
 .pop-desk-container {
@@ -335,6 +336,8 @@ elements layout and styles
     overflow: hidden;
     width: 94%;
     z-index: 2;
+    transition: all 0.5s ease 0.1s;
+    top: 70px;
 }
 
 .pop-mob-lang-list {
@@ -391,20 +394,36 @@ elements layout and styles
     max-height: 180px;
 }
 
+.colors {
+    transition: all 0.5s ease 0.1s;
+}
+
 .color-desk:checked ~ .colors {
     max-height: 110px;
 }
 
+.seasons {
+    transition: all 0.5s ease 0.1s;
+}
+
 .season-desk:checked ~ .seasons {
-    max-height: 45px;
+    max-height: 60px;
+}
+
+.fabrics {
+    transition: all 0.5s ease 0.1s;
 }
 
 .fabric-desk:checked ~ .fabrics {
     max-height: 45px;
 }
 
+.sleeves {
+    transition: all 0.5s ease 0.1s;
+}
+
 .sleeve-desk:checked ~ .sleeves {
-    max-height: 45px;
+    max-height: 60px;
 }
 
 /* filters and sort on mobile */
@@ -419,6 +438,7 @@ elements layout and styles
 .filters-container {
     grid-template-columns: 1fr 0.85fr;
     width: 93%;
+    transition: all 0.5s ease 0.1s;
 }
 
 .size-filter-container {
@@ -485,5 +505,13 @@ elements layout and styles
 }
 
 .sleeve-desk:checked ~ .sleeve-label .sleeve-arrow {
+    transform: rotate(180deg);
+}
+
+.mob-filt-arrow {
+    transition: all 0.5s ease 0.1s;
+}
+
+.filters-mob-switch:checked ~ .filters-arrow-label .mob-filt-arrow {
     transform: rotate(180deg);
 }
