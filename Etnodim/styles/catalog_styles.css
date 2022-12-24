@@ -120,6 +120,10 @@ a {
     overflow: hidden;
 }
 
+.trans-all {
+    transition: all 0.5s ease 1s;
+}
+
 @media (max-width: 768px) { 
     .mobile-hidden { 
         display: none; 
@@ -379,6 +383,10 @@ elements layout and styles
 }
 
 /* filters on desktop */
+.sizes {
+    transition: all 0.5s ease 0.1s;
+}
+
 .size-desk:checked ~ .sizes {
     max-height: 180px;
 }
@@ -436,4 +444,46 @@ elements layout and styles
 .sleeve-filter-container {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+}
+
+/* arrows animation */
+
+.size-arrow {
+    transition: all 0.5s ease 0.1s;
+}
+
+.size-desk:checked ~ .size-label .size-arrow {
+    transform: rotate(180deg);
+}
+
+.color-arrow {
+    transition: all 0.5s ease 0.1s;
+}
+
+.color-desk:checked ~ .color-label .color-arrow {
+    transform: rotate(180deg);
+}
+
+.season-arrow {
+    transition: all 0.5s ease 0.1s;
+}
+
+.season-desk:checked ~ .season-label .season-arrow {
+    transform: rotate(180deg);
+}
+
+.fabric-arrow {
+    transition: all 0.5s ease 0.1s;
+}
+
+.fabric-desk:checked ~ .fabric-label .fabric-arrow {
+    transform: rotate(180deg);
+}
+
+.sleeve-arrow {
+    transition: all 0.5s ease 0.1s;
+}
+
+.sleeve-desk:checked ~ .sleeve-label .sleeve-arrow {
+    transform: rotate(180deg);
 }
