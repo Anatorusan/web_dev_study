@@ -159,8 +159,7 @@ a {
     display: grid;
     grid-template-areas: 
     "header header header"
-    "aside main main"
-    "footer footer footer";
+    "aside main main";
 }
 
 .header-container {
@@ -618,4 +617,9 @@ elements layout and styles
 .social-icons {
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.arrow-up-container {
+    left: 42.8%;
+    top: 175px;
 }
