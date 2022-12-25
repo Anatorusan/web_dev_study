@@ -133,6 +133,10 @@ a {
     padding-bottom: 70px;
 }
 
+.mr-64 {
+    margin-right: 64px;
+}
+
 .w-10 {
     width: 10px;
 }
@@ -513,7 +517,7 @@ elements layout and styles
 /* ===navbar=== */
 
 .navbar {
-    padding: 25px 0;
+    padding: 8px 0;
 }
 
 .nb-container-1 {
@@ -541,14 +545,20 @@ elements layout and styles
     gap: 5px;
 }
 
+@media all and (min-width: 770px) {
+    .navbar {
+        padding: 25px 0;
+    }
+}
+
 @media all and (min-width: 890px) {
     .nb-list-1 {
         gap: 30px;
     }
-    
     .nb-list-2 {
         gap: 10px;
     }
+
 }
 
 /* catalog-dropdown */

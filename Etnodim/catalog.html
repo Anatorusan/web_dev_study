@@ -20,7 +20,7 @@
                     <div class="nav-container pos-rel">
                         <nav class="navbar">
                             <div class="nb-container-1">
-                                <ul class="nb-list-1">
+                                <ul class="nb-list-1 mr-64">
                                     <!-- pop-up mobile -->
                                     <li class="desktop-hidden">
                                         <form>
@@ -34,17 +34,6 @@
                                             </label>
                                             <div class="mob-drop">
                                                 <div class="pop-mob-container brdr-tran bg-white">
-                                                    <!-- <div class="pop-mob-nav">
-                                                        <div class="close">
-                                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <rect x="1.28296" y="0.0751953" width="20" height="1" transform="rotate(45 1.28296 0.0751953)" fill="black"/>
-                                                                <rect x="0.575928" y="14.2173" width="20" height="1" transform="rotate(-45 0.575928 14.2173)" fill="black"/>
-                                                            </svg>    
-                                                        </div>
-                                                        <div class="logo-mob-pop-container">
-                                                            <img src="icons/logo.svg" alt="etnodim logo" width="184" height="48"/>
-                                                        </div>
-                                                    </div> -->
                                                     <div class="pop-mob-list">
                                                         <ul>
                                                             <li ><a href="#">Каталог</a></li>
@@ -137,7 +126,12 @@
                                 </ul>
                             </div>
                             <div class="logo-container">
-                                <a href="#"><img src="icons/logo.svg" alt="etnodim logo" width="184" height="48"/></a>
+                                <a href="#">
+                                    <picture>
+                                        <source srcset="icons/logo.svg" media="(min-width: 426px)" width="184" height="48"/>
+                                        <img src="icons/logo_sm.svg" alt="etnodim logo" width="95" height="25"/>
+                                    </picture>
+                                </a>
                             </div>
                             <div class="nb-container-2">
                                 <ul class="nb-list-2">
