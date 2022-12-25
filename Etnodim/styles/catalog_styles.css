@@ -602,6 +602,18 @@ elements layout and styles
     padding-bottom: 131px;
 }
 
+/* cards */
+
+
+
+@media (min-width: 768px) {
+    .card__image {
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        object-position: top;
+    }
+}
+
 /* footer */
 .footer-container {
     background-color: #F4F4F4;
