@@ -706,7 +706,7 @@ elements layout and styles
 }
 
 .size-desk:checked ~ .sizes {
-    max-height: 200px;
+    max-height: 250px;
 }
 
 .colors {
@@ -714,7 +714,7 @@ elements layout and styles
 }
 
 .color-desk:checked ~ .colors {
-    max-height: 120px;
+    max-height: 200px;
 }
 
 .seasons {
