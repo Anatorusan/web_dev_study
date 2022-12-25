@@ -334,10 +334,6 @@ a {
     box-shadow: 3px 3px 3px #9a9a9a;
 }
 
-/* .trans-all {
-    transition: all 0.5s ease 1s;
-} */
-
 @media (max-width: 769px) { 
     .mobile-hidden { 
         display: none; 
