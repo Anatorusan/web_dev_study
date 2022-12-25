@@ -581,6 +581,11 @@ elements layout and styles
 }
 
 /* mobile-dropdown */
+.red-arrow-right {
+    left: 125px;
+    top: 5px;
+}
+
 .burg-ico {
     position: relative;
     cursor: pointer;
