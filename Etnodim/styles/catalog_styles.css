@@ -406,6 +406,7 @@ a {
 .navbar {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .sort-and-heading-desk {
@@ -543,6 +544,13 @@ elements layout and styles
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media all and (min-width: 770px) {
