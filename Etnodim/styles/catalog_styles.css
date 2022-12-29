@@ -141,6 +141,10 @@ a {
     margin-left: 20px;
 }
 
+.mr-5 {
+    margin-right: 5px;
+}
+
 .mr-20 {
     margin-right: 20px;
 }
@@ -351,6 +355,14 @@ a {
     justify-content: space-between;
 }
 
+.hrzcntr {
+    justify-content: center;
+}
+
+.vertcntr {
+    align-items: center;
+}
+
 .mx-hg-0 {
     max-height: 0;
 }
@@ -361,6 +373,12 @@ a {
 
 .shadow {
     box-shadow: 3px 3px 3px #9a9a9a;
+}
+
+.checkbx {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #565656;
 }
 
 @media (max-width: 769px) { 
@@ -910,3 +928,19 @@ elements layout and styles
     transform: translate(-50%, -70%);
     top: 0;
 }
+
+/* checkboxes */
+
+.check-symb {
+    display: none;
+}
+
+.fltr-check:checked ~ .checklbl .checkbx .check-symb {
+    display: initial;
+
+}
+
+.fltr-check:checked ~ .checklbl .checkbx {
+    background-color: var(--grey);
+}
+
