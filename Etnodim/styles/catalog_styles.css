@@ -393,7 +393,7 @@ a {
     grid-template-areas: 
     "header header header"
     "aside main main";
-    gap: 40px 20px;
+   row-gap: 20px;
 }
 
 .header-container {
@@ -485,6 +485,10 @@ a {
 }
 
 @media (min-width: 770px) {
+    .page-container {
+        gap: 40px 20px;
+    }
+    
     .cards-container {
         gap: 50px;
     }
