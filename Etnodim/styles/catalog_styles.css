@@ -149,6 +149,10 @@ a {
     margin-right: 64px;
 }
 
+.mb-130 {
+    margin-bottom: 130px;
+}
+
 .w-10 {
     width: 10px;
 }
@@ -299,6 +303,10 @@ a {
     display: none;
 }
 
+.dsp-inblock {
+    display: inline-block;
+}
+
 .pos-abs {
     position: absolute;
 }
@@ -307,9 +315,9 @@ a {
     position: relative;
 }
 
-/* .brdr-dem {
+.brdr-dem {
     border: 1px solid #000;
-} */
+}
 
 .brdr-non {
     border: none;
@@ -604,7 +612,7 @@ elements layout and styles
     position: absolute;
     max-height: 0;
     overflow: hidden;
-    top: 99px;
+    top: 93px;
     width: 100%;
     transition: all 0.5s ease 0.1s;
 }
@@ -868,7 +876,6 @@ elements layout and styles
 
 .main-bottom {
     padding-top: 64px;
-    padding-bottom: 131px;
 }
 
 /* cards */
@@ -899,6 +906,7 @@ elements layout and styles
 }
 
 .arrow-up-container {
-    left: 44.4%;
-    top: 175px;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    top: 0;
 }
