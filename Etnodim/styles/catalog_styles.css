@@ -393,7 +393,7 @@ a {
     grid-template-areas: 
     "header header header"
     "aside main main";
-   row-gap: 20px;
+    row-gap: 20px;
 }
 
 .header-container {
