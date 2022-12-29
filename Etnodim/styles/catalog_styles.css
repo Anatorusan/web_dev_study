@@ -133,6 +133,14 @@ a {
     padding-bottom: 70px;
 }
 
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
 .mr-64 {
     margin-right: 64px;
 }
@@ -385,6 +393,7 @@ a {
     grid-template-areas: 
     "header header header"
     "aside main main";
+    gap: 40px 20px;
 }
 
 .header-container {
@@ -684,7 +693,6 @@ elements layout and styles
 /* crumbs */
 .crumbs-list {
     padding-top: 10px;
-    padding-bottom: 44px;
 }
 
 .crumbs-list__item {
@@ -760,7 +768,7 @@ elements layout and styles
 
 .filters-container {
     grid-template-columns: 1fr 0.85fr;
-    width: 93%;
+    width: 197px;
     transition: all 0.5s ease 0.1s;
 }
 
