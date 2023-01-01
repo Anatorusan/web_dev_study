@@ -1,0 +1,283 @@
+/* =============================================================
+========================== content ==========================
+============================================================= */
+/* 1. general styles */
+
+/* 2. navbar */
+
+/* 3. section-1 */
+
+/* 4. section-2 */
+
+/* 5. section-3 */
+
+/* 6. section-4 */
+
+/* 7. section-5 */
+
+/* 8. section-6 */
+
+/* 9. section-7 */
+
+/* 10. section-8 */
+
+/* =========================
+   ===== general styles ====
+   ========================= */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Basis Grotesque Pro', sans-serif;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper-s {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button {
+    padding: 16px 31px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #0536FC;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:#0536fc8f;
+}
+
+.arrow-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.ord__list {
+    list-style: none;
+}
+
+@media all and (max-width: 767px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media all and (min-width: 425px) {
+    .section-grid-container {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media all and (min-width: 720px) {
+    .section-grid-container {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .button {
+        padding: 18px 35px;
+        border: 1px solid transparent;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+/* =========================
+   ======= navbar =======
+   ========================= */
+
+   .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+}
+
+.navbar-container_pad {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo-container {
+    margin-left: 3.5%;
+    margin-right: 3.4%;
+}
+
+.logo__figure {
+    position: relative;
+}
+
+.logo__caption {
+    display: none;
+    margin-left: 40px;
+}
+
+.logo__link {
+    text-decoration: none;
+}
+
+.logo__image_no-mxwdth {
+    max-width: none;
+}
+
+.logo__figure {
+    position: relative;
+}
+
+.logo__image-container {
+    position: absolute;
+    top: 7px;
+}
+
+.links-and-language-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+}
+
+.links-container__ul {
+    display: flex;
+}
+
+.nav_li {
+    list-style-type: none;
+    margin-right: 17px;
+}
+
+.nav_li::after {
+    content: url('icons/arrow_dropdown_black.svg');
+    padding-left: 10px;
+}
+
+.links-container__link {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    margin-right: 3.5%;
+}
+
+select {
+    color: #0536FC;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    border: 1px solid transparent;
+}
+
+.school {
+    margin-left: 40px;
+}
+
+.menu {
+    margin-left: 40px;
+}
+
+@media all and (min-width: 768px) {
+
+    .nav_li {
+        margin-right: 25px;
+    }
+
+    .partners-marg {
+        margin-right: 50px;
+    }
+
+    .support {
+        margin-right: 20px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    .nav_li {
+        margin-right: 50px;
+    }
+
+    .partners-marg {
+        margin-right: 101px;
+    }
+}
+
+@media all and (min-width: 1205px) {
+    .logo__caption {
+        display: block;
+        padding-left: 10px;
+        color: #000;
+        font-weight: 300;
+        opacity: 0.35;
+    }
+
+    .logo-container {
+        margin-left: 3.5%;
+        margin-right: 6.3%;
+    }
+
+    .school {
+        margin-left: 0px;
+    }
+}

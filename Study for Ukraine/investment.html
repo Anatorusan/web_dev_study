@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device width, initial-scale=1.0">
         <meta name="description" content="Study program for ukraine. Програма навчай для України">
         <base target="_blank">
-        <link rel="stylesheet" href="styles/style_flex.css">
+        <!-- <link rel="stylesheet" href="styles/style_flex.css"> -->
+        <link rel="stylesheet" href="styles/investments-style.css">
         <link href="https://fonts.cdnfonts.com/css/basis-grotesque-pro" rel="stylesheet">
         <title>Навчай - для України</title>
     </head>
@@ -45,5 +46,106 @@
                 </div>
             </nav>
         </div>
+        <div>
+            for partners
+        </div>
         <!-- investments -->
+        <div class="investments-section-container wrapper">
+            <section class="investments-section">
+                <div class="investment-header-container">
+                    <h2 class="investment-h2">інвестиції</h2>
+                    <h3 class="investment-h3">зробити
+                        — інвестиції у програму
+                    </h3>
+                </div>
+                <div class="paymeth-form-container">
+                    <form class="paymeth-form">
+                        <div class="paymeth-container">
+                            <div class="paymeth-text-container">
+                                <h4 class="paymeth-text">виберіть спосіб оплати
+                                </h4>
+                            </div>
+                            <div class="paymeth-form-opt-container">
+                                <ul class="paymeth-opt-list">
+                                    <li class="paymeth-opt-list__item">
+                                        <input class="paymeth-form__card-input" type="radio" name="payopt" value="card" id="card">
+                                        <label class="paymeth-form__card-label" for="card">Банківська карта</label>
+                                    </li>
+                                    <li class="paymeth-opt-list__item">
+                                        <input class="paymeth-form__paypal-input" type="radio" name="payopt" value="paypal" id="paypal">
+                                        <label class="paymeth-form__paypal-label" for="paypal">PayPal</label>
+                                    </li>
+                                    <li class="paymeth-opt-list__item">
+                                        <input class="paymeth-form__invoice-input" type="radio" name="payopt" value="invoice" id="invoice">
+                                        <label class="paymeth-form__invoice-label" for="invoice">Банківська платіжна квитанція</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="paymeth-form__payment-container">
+                            <div class="payment-block">
+                                <div class="paymeth-form__card">
+                                    <h4>банківська карта</h4>
+                                </div>
+                                <div class="amount-container">
+                                    <ul class="amount-list">
+                                        <li class="amount-list__item">
+                                            <input class="paymeth-form__amount-50k-input" type="radio" name="amount" value="50k" id="50k">
+                                            <label class="paymeth-form__amount-50k-label" for="50k">50 000</label>
+                                        </li>
+                                        <li class="amount-list__item">
+                                            <input class="paymeth-form__amount-30k-input" type="radio" name="amount" value="30k" id="30k">
+                                            <label class="paymeth-form__amount-30k-label" for="30k">30 000</label>
+                                        </li>
+                                        <li class="amount-list__item">
+                                            <input class="paymeth-form__amount-10k-input" type="radio" name="amount" value="10k" id="10k">
+                                            <label class="paymeth-form__amount-10k-label" for="10k">10 000</label>
+                                        </li>
+                                        <li class="amount-list__item">
+                                            <input class="paymeth-form__amount-1k-input" type="radio" name="amount" value="1k" id="1k">
+                                            <label class="paymeth-form__amount-1k-label">1 000</label>
+                                        </li>
+                                    </ul>
+                                    <div class="paymeth-form__other-amount">
+                                        <input type="text" id="other-amount" name="other-amount" value="other-amount" id="other-amount" placeholder="Інша сумма">
+                                    </div>
+                                </div>
+                                <div class="paymeth-form__freq">
+                                    <ul class="frq-list">
+                                        <li class="frq-list__item">
+                                            <input class="paymeth-form__month-input" type="radio" name="freq" value="month" id="month">
+                                            <label class="paymeth-form__month-label" for="month">Щомісячно</label>
+                                        </li>
+                                        <li class="frq-list__item">
+                                            <input class="paymeth-form__once-input" type="radio" name="freq" value="once" id="once">
+                                            <label class="paymeth-form__once-label" for="once">Одноразово</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="paymeth-form-name-container">
+                                    <label class="paymeth-form__name-label" for="name">ім’я</label>
+                                    <input class="paymeth-form__name-input" type="text" value="name" id="name" name="name" placeholder="Напишіть ваше ім’я">
+                                </div>
+                                <div class="paymeth-form-email-container">
+                                    <label class="paymeth-form__email-label" for="email">Email</label>
+                                    <input class="paymeth-form__email-input" type="text" value="email" id="email" name="email" placeholder="Напишіть вашу електронну адресу">
+                                </div>
+                                <div class="paymeth-form-offer-container">
+                                    <input class="payment-form__offer-input" type="checkbox" value="offer" id="offer" name="offer">
+                                    <label class="payment-form__offer-label" for="offer">Я приймаю <a class="offer-link" href="#">Договір оферти</a></label>
+                                </div>
+                                <div class="paymeth-form-privacy-container">
+                                    <input class="payment-form__privacy-input" type="checkbox" value="privacy" id="privacy" name="privacy">
+                                    <label class="payment-form__privacy-label" for="privacy">Я приймаю <a class="privacy-link" href="#">Угоду про використання персональних даних</a></label>
+                                </div>
+                                <div class="send-button-container">
+                                    <button class="button">відправити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
     </body>
+</html>
