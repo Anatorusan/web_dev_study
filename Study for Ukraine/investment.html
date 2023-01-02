@@ -46,21 +46,23 @@
                 </div>
             </nav>
         </div>
-        <div>
+        <div class="wrapper">
             for partners
         </div>
         <!-- investments -->
         <div class="investments-section-container wrapper">
             <section class="investments-section">
-                <div class="investment-header-container">
-                    <h2 class="investment-h2">інвестиції</h2>
-                    <h3 class="investment-h3">зробити
-                        — інвестиції у програму
-                    </h3>
+                <div class="investment-header-container investment-header-container_paddings">
+                    <div class="investment-header-text">
+                        <h2 class="investment-section__investment-h2 investment-section__investment-h2_margin">інвестиції</h2>
+                        <h3 class="investment-section__investment-h3">зробити<br>
+                            — інвестиції у програму
+                        </h3>
+                    </div>
                 </div>
                 <div class="paymeth-form-container">
                     <form class="paymeth-form">
-                        <div class="paymeth-container">
+                        <div class="paymeth-container paymeth-container_padding">
                             <div class="paymeth-text-container">
                                 <h4 class="paymeth-text">виберіть спосіб оплати
                                 </h4>
@@ -68,16 +70,16 @@
                             <div class="paymeth-form-opt-container">
                                 <ul class="paymeth-opt-list">
                                     <li class="paymeth-opt-list__item">
-                                        <input class="paymeth-form__card-input" type="radio" name="payopt" value="card" id="card">
-                                        <label class="paymeth-form__card-label" for="card">Банківська карта</label>
+                                        <input class="paymeth-form__input" type="radio" name="payopt" value="card" id="card">
+                                        <label class="paymeth-form__label" for="card">Банківська карта</label>
                                     </li>
                                     <li class="paymeth-opt-list__item">
-                                        <input class="paymeth-form__paypal-input" type="radio" name="payopt" value="paypal" id="paypal">
-                                        <label class="paymeth-form__paypal-label" for="paypal">PayPal</label>
+                                        <input class="paymeth-form__input" type="radio" name="payopt" value="paypal" id="paypal">
+                                        <label class="paymeth-form__label" for="paypal">PayPal</label>
                                     </li>
-                                    <li class="paymeth-opt-list__item">
-                                        <input class="paymeth-form__invoice-input" type="radio" name="payopt" value="invoice" id="invoice">
-                                        <label class="paymeth-form__invoice-label" for="invoice">Банківська платіжна квитанція</label>
+                                    <li class="paymeth-opt-list__item-last">
+                                        <input class="paymeth-form__input" type="radio" name="payopt" value="invoice" id="invoice">
+                                        <label class="paymeth-form__label" for="invoice">Банківська платіжна квитанція</label>
                                     </li>
                                 </ul>
                             </div>
