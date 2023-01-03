@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+label {
+    display: inline-block;
+}
+
 body {
     font-family: 'Basis Grotesque Pro', sans-serif;
     background-color: #fff;
@@ -364,7 +368,7 @@ select {
 } */
 
 .paymeth-form__label {
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 .paymeth-opt-list__item {
@@ -376,4 +380,195 @@ select {
     line-height: 24px;
     letter-spacing: -0.03em;
     opacity: 0.6;
+}
+
+
+
+.paymeth-form__card-container {
+    padding-bottom: 30px;
+}
+
+.paymeth-form__card-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.amount-list {
+    display: flex;
+}
+
+.paymeth-form__amount-input {
+    display: none;
+}
+
+.amount-list__item {
+    /* padding: 10px 0; */
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.amount-list__item:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.paymeth-form__amount-label {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding: 13px 51px;
+}
+
+.paymeth-form__amount-label-last {
+    padding-top: 13px;
+    padding-right: 63px;
+    padding-bottom: 13px;
+    padding-left: 54px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.paymeth-form__other-amount {
+    margin-bottom: 20px;
+}
+
+.paymeth-form__other-amount-input {
+    width: 637px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 35px;
+    border-top: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+}
+
+.paymeth-form__other-amount-input::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.paymeth-form__amount-input_checked:checked + label {
+    color: #fff;
+    background-color: #0536FC;
+}
+
+.frq-list {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.frq-list__item {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+}
+
+.paymeth-form__month-label {
+    padding-left: 8px;
+    margin-right: 30px;
+    opacity: 0.6;
+}
+
+.paymeth-form__once-label {
+    padding-left: 8px;
+    opacity: 0.6;
+}
+
+.paymeth-form__name-label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.paymeth-form__email-label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.paymeth-form__name-input {
+    margin-bottom: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 478px;
+}
+
+.paymeth-form__email-input {
+    margin-bottom: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 478px;
+}
+
+.paymeth-form__name-input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    opacity: 0.35;
+}
+
+.paymeth-form__email-input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    opacity: 0.35;
+}
+
+.paymeth-form-offer-container {
+    margin-bottom: 16px;
+}
+
+.paymeth-form-privacy-container {
+    margin-bottom: 48px;
+}
+
+.payment-form__offer-label {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color:rgba(0, 0, 0, 0.6)
+}
+
+.payment-form__privacy-label {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color:rgba(0, 0, 0, 0.6)
+}
+
+.offer-link {
+    color: #0536FC;
+    text-decoration: none;
+}
+
+.privacy-link {
+    color: #0536FC;
+    text-decoration: none;
 }
