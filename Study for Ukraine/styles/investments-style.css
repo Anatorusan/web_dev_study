@@ -43,6 +43,18 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
 .wrapper {
     max-width: 1440px;
     margin-left: auto;
@@ -135,7 +147,7 @@ ul {
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
 }
@@ -214,9 +226,9 @@ ul {
     margin-right: 3.5%;
 }
 
-select {
+.languages {
     color: #0536FC;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -291,8 +303,8 @@ select {
 }
 
 .investment-section__investment-h2 {
-    font-weight: 700;
-    font-size: 16px;
+    /* font-weight: 700; */
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -305,7 +317,7 @@ select {
 }
 
 .investment-section__investment-h3 {
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 38px;
     line-height: 42px;
     letter-spacing: -0.03em;
@@ -323,7 +335,6 @@ select {
 
 .paymeth-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: flex-end;
 }
 
@@ -337,8 +348,7 @@ select {
 }
 
 .paymeth-text {
-    font-weight: 700;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -361,11 +371,9 @@ select {
     flex-basis: 50%;
 }
 
-/* @media all and (min-width: 768px) {
-    .paymeth-container {
-        flex-direction: row;
-    }
-} */
+.paymeth-opt-list_paddings {
+    padding-bottom: 48px;
+}
 
 .paymeth-form__label {
     padding-left: 8px;
@@ -376,21 +384,19 @@ select {
 }
 
 .paymeth-form__label {
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     opacity: 0.6;
 }
-
-
 
 .paymeth-form__card-container {
     padding-bottom: 30px;
 }
 
 .paymeth-form__card-text {
-    font-weight: 700;
-    font-size: 16px;
+    /* font-weight: 700; */
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -406,7 +412,6 @@ select {
 }
 
 .amount-list__item {
-    /* padding: 10px 0; */
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     border-left: 1px solid rgba(0, 0, 0, 0.15);
@@ -417,7 +422,7 @@ select {
 }
 
 .paymeth-form__amount-label {
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -429,7 +434,7 @@ select {
     padding-right: 63px;
     padding-bottom: 13px;
     padding-left: 54px;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -448,7 +453,7 @@ select {
     border-right: 1px solid rgba(0, 0, 0, 0.15);
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     border-left: 1px solid rgba(0, 0, 0, 0.15);
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
 }
@@ -471,7 +476,7 @@ select {
 }
 
 .frq-list__item {
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
 }
@@ -487,27 +492,17 @@ select {
     opacity: 0.6;
 }
 
-.paymeth-form__name-label {
+.paymeth-form__name-email-label {
     display: block;
-    font-weight: 700;
-    font-size: 16px;
+    /* font-weight: 700; */
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.paymeth-form__email-label {
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.paymeth-form__name-input {
+.paymeth-form__name-email-input {
     margin-bottom: 30px;
     border-top: none;
     border-right: none;
@@ -516,24 +511,7 @@ select {
     width: 478px;
 }
 
-.paymeth-form__email-input {
-    margin-bottom: 30px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    width: 478px;
-}
-
-.paymeth-form__name-input::placeholder {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.03em;
-    opacity: 0.35;
-}
-
-.paymeth-form__email-input::placeholder {
+.name-email-pls::placeholder {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -549,26 +527,17 @@ select {
     margin-bottom: 48px;
 }
 
-.payment-form__offer-label {
-    font-size: 16px;
+.payment-form__offer-label_text {
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: -0.03em;
-    color:rgba(0, 0, 0, 0.6)
-}
-
-.payment-form__privacy-label {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.03em;
-    color:rgba(0, 0, 0, 0.6)
+    color:rgba(0, 0, 0, 0.6);
 }
 
 .offer-link {
     color: #0536FC;
-    text-decoration: none;
 }
 
 .privacy-link {
     color: #0536FC;
-    text-decoration: none;
 }
