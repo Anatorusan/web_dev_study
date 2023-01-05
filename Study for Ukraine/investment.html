@@ -51,7 +51,7 @@
         </div>
         <!-- investments -->
         <div class="investments-section-container wrapper">
-            <section class="investments-section">
+            <section class="investments-section investments-section_margins">
                 <div class="investment-header-container investment-header-container_paddings">
                     <div class="investment-header-text">
                         <h2 class="investment-section__investment-h2 investment-section__investment-h2_margin fw-700 fs-16 lh-150prc ls--0_03em ttr-upper">інвестиції</h2>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="paymeth-form-container">
                     <form class="paymeth-form">
-                        <div class="paymeth-form__payment-container">
+                        <div class="paymeth-form__payment-container paymeth-form__payment-container_paddings">
                             <div class="paymeth-text-container">
                                 <h4 class="paymeth-text fw-700 fs-16 lh-150prc ls--0_03em ttr-upper">виберіть спосіб оплати
                                 </h4>
@@ -107,36 +107,47 @@
                                         </li>
                                     </ul>
                                     <div class="paymeth-form__other-amount">
-                                        <input class="paymeth-form__other-amount-input fs-16 lh-150prc ls--0_03em" type="text" id="other-amount" name="other-amount" placeholder="Інша сумма">
+                                        <input class="paymeth-form__other-amount-input paymeth-form__other-amount-input_paddings
+                                         fs-16 lh-150prc ls--0_03em" type="text" id="other-amount" name="other-amount" placeholder="Інша сумма">
                                     </div>
                                 </div>
                                 <div class="paymeth-form__freq">
-                                    <ul class="frq-list">
+                                    <ul class="frq-list frq-list_margins">
                                         <li class="frq-list__item fs-16 lh-150prc ls--0_03em">
                                             <input class="paymeth-form__month-input" type="radio" name="freq" value="month" id="month" checked>
-                                            <label class="paymeth-form__month-label" for="month">Щомісячно</label>
+                                            <label class="paymeth-form__month-label paymeth-form__month-label_paddings-margins" for="month">Щомісячно</label>
                                         </li>
                                         <li class="frq-list__item fs-16 lh-150prc ls--0_03em">
                                             <input class="paymeth-form__once-input" type="radio" name="freq" value="once" id="once">
-                                            <label class="paymeth-form__once-label" for="once">Одноразово</label>
+                                            <label class="paymeth-form__once-label paymeth-form__once-label_paddings" for="once">Одноразово</label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="paymeth-form-name-container">
-                                    <label class="paymeth-form__name-email-label fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="name">ім’я</label>
-                                    <input class="paymeth-form__name-email-input name-email-pls" type="text" id="name" name="name" placeholder="Напишіть ваше ім’я">
+                                    <label class="paymeth-form__name-email-label paymeth-form__name-email-label_margins
+                                     fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="name">ім’я</label>
+                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins name-email-pls" type="text" id="name" name="name" placeholder="Напишіть ваше ім’я">
                                 </div>
-                                <div class="paymeth-form-email-container">
-                                    <label class="paymeth-form__name-email-label fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="email">Email</label>
-                                    <input class="paymeth-form__name-email-input name-email-pls" type="text" id="email" name="email" placeholder="Напишіть вашу електронну адресу">
+                                <div class="paymeth-form-email-container email_long">
+                                    <label class="paymeth-form__name-email-label paymeth-form__name-email-label_margins fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="email">Email</label>
+                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins name-email-pls" type="text" id="email" name="email" placeholder="Напишіть вашу електронну адресу">
+                                </div>
+                                <div class="paymeth-form-email-container email_short">
+                                    <label class="paymeth-form__name-email-label paymeth-form__name-email-label_margins fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="email">Email</label>
+                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins name-email-pls" type="text" id="email" name="email" placeholder="Напишіть ваш email">
                                 </div>
                                 <div class="paymeth-form-offer-container">
-                                    <input class="payment-form__offer-input" type="checkbox" value="offer" id="offer" name="offer">
-                                    <label class="payment-form__offer-label payment-form__offer-label_text fs-16 lh-150prc ls--0_03em" for="offer">Я приймаю <a class="offer-link" href="#">Договір оферти</a></label>
+                                    
+                                    <label class="payment-form__offer-label payment-form__offer-label_text fs-16 lh-150prc ls--0_03em" for="offer">
+                                        <input class="payment-form__offer-input" type="checkbox" value="offer" id="offer" name="offer">
+                                        <span>Я приймаю <a class="offer-link" href="#">Договір оферти</a></span>
+                                    </label>
                                 </div>
                                 <div class="paymeth-form-privacy-container">
-                                    <input class="payment-form__privacy-input" type="checkbox" value="privacy" id="privacy" name="privacy">
-                                    <label class="payment-form__privacy-label payment-form__offer-label_text fs-16 lh-150prc ls--0_03em" for="privacy">Я приймаю <a class="privacy-link" href="#">Угоду про використання персональних даних</a></label>
+                                    <label class="payment-form__privacy-label payment-form__offer-label_text fs-16 lh-150prc ls--0_03em" for="privacy">
+                                        <input class="payment-form__privacy-input" type="checkbox" value="privacy" id="privacy" name="privacy">
+                                        <span>Я приймаю <a class="privacy-link" href="#">Угоду про використання персональних даних</a></span>
+                                    </label>
                                 </div>
                                 <div class="send-button-container">
                                     <button class="button">відправити</button>
