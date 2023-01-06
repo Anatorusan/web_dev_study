@@ -126,27 +126,32 @@
                                 <div class="paymeth-form-name-container">
                                     <label class="paymeth-form__name-email-label paymeth-form__name-email-label_margins
                                      fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="name">ім’я</label>
-                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins name-email-pls" type="text" id="name" name="name" placeholder="Напишіть ваше ім’я">
+                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins-paddings name-email-pls lh-150prc" type="text" id="name" name="name" placeholder="Напишіть ваше ім’я">
                                 </div>
-                                <div class="paymeth-form-email-container email_long">
+                                <div class="paymeth-form-email-container">
                                     <label class="paymeth-form__name-email-label paymeth-form__name-email-label_margins fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="email">Email</label>
-                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins name-email-pls" type="text" id="email" name="email" placeholder="Напишіть вашу електронну адресу">
-                                </div>
-                                <div class="paymeth-form-email-container email_short">
-                                    <label class="paymeth-form__name-email-label paymeth-form__name-email-label_margins fw-700 fs-16 lh-150prc ls--0_03em ttr-upper" for="email">Email</label>
-                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins name-email-pls" type="text" id="email" name="email" placeholder="Напишіть ваш email">
+                                    <input class="paymeth-form__name-email-input paymeth-form__name-email-input_margins-paddings name-email-pls lh-150prc" type="email" id="email" name="email" placeholder="Напишіть ваш email">
                                 </div>
                                 <div class="paymeth-form-offer-container">
-                                    
                                     <label class="payment-form__offer-label payment-form__offer-label_text fs-16 lh-150prc ls--0_03em" for="offer">
                                         <input class="payment-form__offer-input" type="checkbox" value="offer" id="offer" name="offer">
-                                        <span>Я приймаю <a class="offer-link" href="#">Договір оферти</a></span>
+                                        <div class="checkbox">
+                                            <svg class="blue-check_offer" width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 4L4.5 8L11 1" stroke="#0536FC" stroke-width="0.7"/>
+                                            </svg>
+                                        </div>
+                                        <div>Я приймаю&nbsp<a class="offer-link" href="#">Договір оферти</a></div>
                                     </label>
                                 </div>
                                 <div class="paymeth-form-privacy-container">
                                     <label class="payment-form__privacy-label payment-form__offer-label_text fs-16 lh-150prc ls--0_03em" for="privacy">
                                         <input class="payment-form__privacy-input" type="checkbox" value="privacy" id="privacy" name="privacy">
-                                        <span>Я приймаю <a class="privacy-link" href="#">Угоду про використання персональних даних</a></span>
+                                        <div class="checkbox">
+                                            <svg class="blue-check_priv" width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 4L4.5 8L11 1" stroke="#0536FC" stroke-width="0.7"/>
+                                            </svg>
+                                        </div>
+                                        <div>Я приймаю&nbsp<a class="privacy-link" href="#">Угоду про використання персональних даних</a></div>
                                     </label>
                                 </div>
                                 <div class="send-button-container">

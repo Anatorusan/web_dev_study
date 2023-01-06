@@ -362,7 +362,7 @@ a {
     display: flex;
 }
 
-@media all and (max-width:399px) {
+/* @media all and (max-width:399px) {
     .email_long {
         display: none;
     }
@@ -372,7 +372,7 @@ a {
     .email_short {
         display: none;
     }
-}
+} */
 
 @media all and (min-width:540px) {
     .paymeth-opt-list {
@@ -421,15 +421,15 @@ a {
 }
 
 .paymeth-form__amount-label {
-    padding: 13px 51px;
+    padding: 13px 35px;
     width: 100%;
 }
 
 .paymeth-form__amount-label-last {
     padding-top: 13px;
-    padding-right: 63px;
+    padding-right: 35px;
     padding-bottom: 13px;
-    padding-left: 54px;
+    padding-left: 35px;
     width: 100%;
 }
 
@@ -473,20 +473,42 @@ a {
 }
 
 .paymeth-form__name-email-label_margins {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.paymeth-form__name-email-input_margins {
+.paymeth-form__name-email-input_margins-paddings {
     margin-bottom: 30px;
+    padding-top: 5px;
+}
+
+.payment-form__offer-label {
+    display: flex;
+    align-items: center;
+}
+
+.payment-form__privacy-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 @media all and (min-width:660px) {
     .paymeth-form__amount-label {
         width: initial;
+        padding: 13px 51px;
     }
 
     .paymeth-form__amount-label-last {
         width: initial;
+        padding-right: 63px;
+        padding-left: 54px;
     }
 }
 
@@ -564,7 +586,7 @@ a {
     border-right: none;
     border-left: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    width: 67.5%;
+    width: 100%;
 }
 
 .name-email-pls::placeholder {
@@ -587,26 +609,59 @@ a {
     color: #0536FC;
 }
 
-.payment-form__offer-label {
+/* .payment-form__offer-label {
     white-space: nowrap;
-}
+} */
 
-.payment-form__offer-label > span {
+/* .payment-form__offer-label > span {
     white-space: normal;
     margin-left: 5px;
-}
+} */
 
-.payment-form__privacy-label {
+/* .payment-form__privacy-label {
     white-space: nowrap;
-}
+} */
 
 .payment-form__privacy-label > span {
     white-space: normal;
     margin-left: 5px;
 }
 
+.payment-form__offer-input {
+    display: none;
+}
+
+.payment-form__privacy-input {
+    display: none;
+}
+
+.blue-check_offer {
+    display: none;
+}
+
+.payment-form__offer-input:checked ~ .checkbox .blue-check_offer {
+    display: initial;
+}
+
+.blue-check_priv {
+    display: none;
+}
+
+.payment-form__privacy-input:checked ~ .checkbox .blue-check_priv {
+    display: initial;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 @media all and (min-width:660px) {
     .amount-list__item {
         border-right: none;
+    }
+    .paymeth-form__name-email-input {
+        width: 67.5%;
     }
 }
