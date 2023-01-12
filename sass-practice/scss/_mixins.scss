@@ -1,0 +1,20 @@
+@mixin h4_stl {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+@mixin p_stl {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+}
+
+@mixin p_lght_stl {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+}

@@ -1,3 +1,7 @@
 @import './resets.scss';
 @import './variables';
+@import './mixins';
 
+body {
+    font-family: 'Basis Grotesque Pro', sans-serif;
+}
