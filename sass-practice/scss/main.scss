@@ -2,6 +2,7 @@
 @import './variables';
 @import './mixins';
 
+// general styles
 body {
     font-family: 'Basis Grotesque Pro', sans-serif;
 }
@@ -10,7 +11,63 @@ ul {
     list-style: none;
 }
 
+@media (max-width: $tablet-brk) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet-brk) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+// macro layout
 .wrapper {
-    margin-left: 221px;
-    margin-right: 221px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wrapper-inner {
+    max-width: 1016px;
+    margin-left: auto;
+    margin-right: auto;      
+}
+
+// header
+.header-container {
+    padding-top: 160px;
+}
+
+.header__topic {
+    @include h4_stl;
+    color: $blue;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.header__statement {
+    @include h3_stl;
+    margin-bottom: 70px;
+}
+
+.header__description {
+    @include p_lght_stl;
+    opacity: 0.35;
+    // make clamp padding here
+}
+
+//q&a
+.qa-container {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 150px;
+}
+
+.qa-form {
+    max-width: 456px;
 }
