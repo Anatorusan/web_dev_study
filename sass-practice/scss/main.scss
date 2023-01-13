@@ -3,6 +3,10 @@
 @import './mixins';
 
 // general styles
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: 'Basis Grotesque Pro', sans-serif;
 }
@@ -58,7 +62,6 @@ ul {
 .header__description {
     @include p_lght_stl;
     opacity: 0.35;
-    // make clamp padding here
 }
 
 //q&a
@@ -66,8 +69,82 @@ ul {
     display: flex;
     justify-content: end;
     padding-bottom: 150px;
+    padding-top: 6px;
 }
 
 .qa-form {
     max-width: 456px;
 }
+
+.qa-item__chx-benef,
+.qa-item__chx-partc,
+.qa-item__chx-prep,
+.qa-item__chx-supp {
+    display: none;
+}
+
+.lbl-container {
+    display: flex;
+    gap: 156px;
+}
+
+.qa-item__answer-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: all $accord-tran-time $accord-time-func;
+}
+
+.qa-item__chx-benef:checked ~ .qa-item__answer-container {
+    max-height: 300px;
+}
+
+.qa-item__chx-partc:checked ~ .qa-item__answer-container {
+    max-height: 300px;
+}
+
+.qa-item__chx-prep:checked ~ .qa-item__answer-container {
+    max-height: 300px;
+}
+
+.qa-item__chx-supp:checked ~ .qa-item__answer-container {
+    max-height: 300px;
+}
+
+// plus
+.qa-item__lbl-benef {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    
+}
+
+.hor {
+    width: 15px;
+    height: 1.4px;
+    background: $blue;
+    position: absolute;
+    top: 7px;
+    left: -1px;
+    transition: 1s ease;
+  }
+
+  .vert {
+    width: 15px;
+    height: 1.4px;
+    background: $blue;
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 6.4px;
+    left: -1px;
+    transition: 1s ease;
+  }
+  
+  .qa-item__chx-benef:checked ~ .lbl-container .qa-item__lbl-benef .vert {
+    transform: rotate(360deg);
+  }
+
+  .qa-item__chx-benef:checked ~ .lbl-container .qa-item__lbl-benef .hor {
+    transform: rotate(360deg);
+  }
