@@ -18,16 +18,6 @@ ul {
   list-style: none;
 }
 
-@media (max-width: 768px) {
-  .mobile-hidden {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .desktop-hidden {
-    display: none;
-  }
-}
 .wrapper {
   max-width: 1440px;
   margin-left: auto;
@@ -78,7 +68,7 @@ ul {
   display: flex;
   justify-content: end;
   padding-bottom: 150px;
-  padding-top: 6px;
+  padding-top: calc(50px - 3vw);
 }
 
 .qa-form {
@@ -92,21 +82,9 @@ ul {
   display: none;
 }
 
-.lbl-container-benef {
-  display: flex;
-  justify-content: space-between;
-}
-
-.lbl-container-partc {
-  display: flex;
-  justify-content: space-between;
-}
-
-.lbl-container-prep {
-  display: flex;
-  justify-content: space-between;
-}
-
+.lbl-container-benef,
+.lbl-container-partc,
+.lbl-container-prep,
 .lbl-container-supp {
   display: flex;
   justify-content: space-between;
@@ -148,7 +126,7 @@ ul {
 .qa-item__answer-container {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 .qa-item__answer {
@@ -162,18 +140,9 @@ ul {
   margin-top: 70px;
 }
 
-.qa-item__chx-benef:checked ~ .qa-item__answer-container {
-  max-height: 300px;
-}
-
-.qa-item__chx-partc:checked ~ .qa-item__answer-container {
-  max-height: 300px;
-}
-
-.qa-item__chx-prep:checked ~ .qa-item__answer-container {
-  max-height: 300px;
-}
-
+.qa-item__chx-benef:checked ~ .qa-item__answer-container,
+.qa-item__chx-partc:checked ~ .qa-item__answer-container,
+.qa-item__chx-prep:checked ~ .qa-item__answer-container,
 .qa-item__chx-supp:checked ~ .qa-item__answer-container {
   max-height: 300px;
 }

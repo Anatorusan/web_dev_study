@@ -15,18 +15,6 @@ ul {
     list-style: none;
 }
 
-@media (max-width: $tablet-brk) {
-    .mobile-hidden {
-        display: none;
-    }
-}
-
-@media (min-width: $tablet-brk) {
-    .desktop-hidden {
-        display: none;
-    }
-}
-
 // macro layout
 .wrapper {
     max-width: 1440px;
@@ -69,7 +57,7 @@ ul {
     display: flex;
     justify-content: end;
     padding-bottom: 150px;
-    padding-top: 6px;
+    padding-top: calc(50px - 3vw);
 }
 
 .qa-form {
@@ -83,22 +71,11 @@ ul {
     display: none;
 }
 
-.lbl-container-benef {
-    display: flex;
-    justify-content: space-between;
-}
-
-.lbl-container-partc {
-    display: flex;
-    justify-content: space-between;
-}
-
-.lbl-container-prep {
-    display: flex;
-    justify-content: space-between;
-}
-
-.lbl-container-supp {
+.lbl-container-benef,
+.lbl-container-partc,
+.lbl-container-prep,
+.lbl-container-supp
+{
     display: flex;
     justify-content: space-between;
 }
@@ -146,18 +123,9 @@ ul {
     margin-top: 70px;
 }
 
-.qa-item__chx-benef:checked ~ .qa-item__answer-container {
-    max-height: 300px;
-}
-
-.qa-item__chx-partc:checked ~ .qa-item__answer-container {
-    max-height: 300px;
-}
-
-.qa-item__chx-prep:checked ~ .qa-item__answer-container {
-    max-height: 300px;
-}
-
+.qa-item__chx-benef:checked ~ .qa-item__answer-container,
+.qa-item__chx-partc:checked ~ .qa-item__answer-container,
+.qa-item__chx-prep:checked ~ .qa-item__answer-container,
 .qa-item__chx-supp:checked ~ .qa-item__answer-container {
     max-height: 300px;
 }
@@ -179,7 +147,7 @@ ul {
     position: absolute;
     top: 7px;
     left: -1px;
-    transition: 1s ease;
+    transition: $plus-tran-time $plus-time-func;
   }
 
   .vert {
@@ -190,7 +158,7 @@ ul {
     transform: rotate(90deg);
     bottom: 6.4px;
     left: -1px;
-    transition: 1s ease;
+    transition: $plus-tran-time $plus-time-func;
   }
   
   .qa-item__chx-benef:checked ~ .lbl-container-benef .qa-item__lbl .vert,
