@@ -3,7 +3,7 @@
 @import './mixins';
 
 // general styles
-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -85,18 +85,65 @@ ul {
 
 .lbl-container-benef {
     display: flex;
-    gap: 57px;
+    justify-content: space-between;
 }
 
 .lbl-container-partc {
     display: flex;
-    gap: 142px;
+    justify-content: space-between;
+}
+
+.lbl-container-prep {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lbl-container-supp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qa-item_border {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.qa-item_paddings {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.qa-item__lbl-prep_mrg-r {
+    margin-right: 2px;
+}
+
+.qa-item__lbl-benef_mrg-t {
+    margin-top: 5px;
+}
+
+.qa-item__lbl-prep_mrg-t {
+    margin-top: 16px;
+}
+
+.qa-item__question-contaiener {
+    margin-right: 5px;
+}
+
+.qa-item__question {
+    @include h4_stl;
 }
 
 .qa-item__answer-container {
     max-height: 0;
     overflow: hidden;
     transition: all $accord-tran-time $accord-time-func;
+}
+
+.qa-item__answer {
+    @include p_stl;
+}
+
+.qa-item__answer-margin {
+    margin-top: 70px;
 }
 
 .qa-item__chx-benef:checked ~ .qa-item__answer-container {
@@ -147,14 +194,13 @@ ul {
   }
   
   .qa-item__chx-benef:checked ~ .lbl-container-benef .qa-item__lbl .vert,
-  .qa-item__chx-benef:checked ~ .lbl-container-benef .qa-item__lbl .hor
-  {
-    transform: rotate(360deg);
-    background: $black;
-  }
-
+  .qa-item__chx-benef:checked ~ .lbl-container-benef .qa-item__lbl .hor,
   .qa-item__chx-partc:checked ~ .lbl-container-partc .qa-item__lbl .vert,
-  .qa-item__chx-partc:checked ~ .lbl-container-partc .qa-item__lbl .hor
+  .qa-item__chx-partc:checked ~ .lbl-container-partc .qa-item__lbl .hor,
+  .qa-item__chx-prep:checked ~ .lbl-container-prep .qa-item__lbl .vert,
+  .qa-item__chx-prep:checked ~ .lbl-container-prep .qa-item__lbl .hor,
+  .qa-item__chx-supp:checked ~ .lbl-container-supp .qa-item__lbl .vert,
+  .qa-item__chx-supp:checked ~ .lbl-container-supp .qa-item__lbl .hor
   {
     transform: rotate(360deg);
     background: $black;

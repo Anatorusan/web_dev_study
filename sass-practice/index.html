@@ -30,12 +30,12 @@
                                         <div class="qa-item__question-container qa-item__question-container_margins">
                                             <input class="qa-item__chx-benef" type="checkbox" name="benef" value="benef" id="benef">
                                             <div class="lbl-container-benef">
-                                                <div>
-                                                    <h4>ЯКІ ПЕРЕВАГИ 
+                                                <div class="qa-item__question-contaiener">
+                                                    <h4 class="qa-item__question">ЯКІ ПЕРЕВАГИ 
                                                         УЧАСТІ У ПРОГРАМІ ДЛЯ ШКОЛИ?
                                                     </h4>
                                                 </div>
-                                                <label class="qa-item__lbl" for="benef" class="qa-item__question qa-item__question_text-style">
+                                                <label class="qa-item__lbl qa-item__lbl-benef_mrg-t" for="benef" class="qa-item__question qa-item__question_text-style">
                                                 <!-- <div class="qa-item__icon-container"> -->
                                                     <span class="vert"></span>
                                                     <span class="hor"></span>
@@ -43,7 +43,7 @@
                                             </label>
                                             </div>
                                             <div class="qa-item__answer-container">
-                                                <p class="qa-item__answer qa-item__answer_text-style">Школа отримує позашкільні заходи для дітей, можливості 
+                                                <p class="qa-item__answer qa-item__answer-margin qa-item__answer_text-style">Школа отримує позашкільні заходи для дітей, можливості 
                                                     професійного розвитку для адміністрації та педагогічного колективу, 
                                                     а також середовище постійного руху до нових 
                                                     освітніх програм в співтоваристві однодумців.
@@ -57,10 +57,10 @@
                                         <div class="qa-item__question-container qa-item__question-container_margins">
                                             <input class="qa-item__chx-partc" type="checkbox" name="partc" value="partc" id="partc">
                                             <div class="lbl-container-partc">
-                                                <div>
-                                                    <h4>ХТО СТАЄ УЧАСНИКАМИ ПРОГРАМИ?</h4>
+                                                <div class="qa-item__question-contaiener">
+                                                    <h4 class="qa-item__question">ХТО СТАЄ УЧАСНИКАМИ ПРОГРАМИ?</h4>
                                                 </div>
-                                                <label class="qa-item__lbl" for="partc" class="qa-item__question qa-item__question_text-style">
+                                                <label class="qa-item__lbl qa-item__lbl-benef_mrg-t" for="partc" class="qa-item__question qa-item__question_text-style">
                                                 <!-- <div class="qa-item__icon-container"> -->
                                                     <span class="vert"></span>
                                                     <span class="hor"></span>
@@ -68,8 +68,8 @@
                                             </label>
                                             </div>
                                             <div class="qa-item__answer-container">
-                                                <p class="qa-item__answer qa-item__answer_text-style">
-                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, dolor?
+                                                <p class="qa-item__answer qa-item__answer-margin qa-item__answer_text-style">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis incidunt, officia fugit facilis quisquam, consequuntur sint veniam amet deserunt et vitae asperiores quasi. Quam, omnis soluta expedita officia alias nam!
                                                 </p>
                                             </div>
                                         </div>
@@ -77,38 +77,42 @@
                                 </li>
                                 <li class="qa-item qa-item_border qa-item_flex qa-item_paddings">
                                     <div class="qa-item__text">
-                                        <input class="qa-item__chx-prep" type="checkbox" name="prep" id="prep" valu="prep">
-                                        <label class="qa-item__lbl-prep" for="prep">
-                                            <h4 class="qa-item__question qa-item__question_text-style">
-                                                яку підготовку отримують учасники від програми?
-                                            </h4>
-                                            <!-- <div class="qa-item__icon-container">
-                                                <span class="vert"></span>
-                                                <span class="hor"></span>
-                                            </div> -->
-                                        </label>
+                                        <input class="qa-item__chx-prep" type="checkbox" name="prep" value="prep" id="prep">
+                                            <div class="lbl-container-prep">
+                                                <div class="qa-item__question-contaiener">
+                                                    <h4 class="qa-item__question">яку підготовку отримують<br> учасники від програми?</h4>
+                                                </div>
+                                                <label class="qa-item__lbl qa-item__lbl-prep_mrg-r qa-item__lbl-prep_mrg-t" for="prep" class="qa-item__question qa-item__question_text-style">
+                                                <!-- <div class="qa-item__icon-container"> -->
+                                                    <span class="vert"></span>
+                                                    <span class="hor"></span>
+                                                <!-- </div> -->
+                                            </label>
+                                            </div>
                                         <div class="qa-item__answer-container">
-                                            <p class="qa-item__answer qa-item__answer_text-style">
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, dolor?
+                                            <p class="qa-item__answer qa-item__answer-margin qa-item__answer_text-style">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque accusantium sit tenetur reprehenderit. Provident dicta illo assumenda necessitatibus quod sequi facilis vitae eius commodi. Ipsam facilis ducimus ab. Nesciunt, unde!
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="qa-item qa-item_border qa-item_flex qa-item_paddings">
                                     <div class="qa-item__text">
-                                        <input class="qa-item__chx-supp" type="checkbox" name="supp" id="supp" valu="supp">
-                                        <label class="qa-item__lbl-supp" for="supp">
-                                            <h4 class="qa-item__question qa-item__question_text-style">
-                                                ЯК ПРОГРАМА ПІДТРИМУЄ учасників ПРОТЯГОМ 2-Х РОКІВ У ПРОГРАМІ?
-                                            </h4>
-                                            <!-- <div class="qa-item__icon-container">
-                                                <span class="vert"></span>
-                                                <span class="hor"></span>
-                                            </div> -->
-                                        </label>
+                                        <input class="qa-item__chx-supp" type="checkbox" name="supp" value="supp" id="supp">
+                                            <div class="lbl-container-supp">
+                                                <div class="qa-item__question-contaiener">
+                                                    <h4 class="qa-item__question">ЯК ПРОГРАМА ПІДТРИМУЄ учасників<br> ПРОТЯГОМ 2-Х РОКІВ У ПРОГРАМІ?</h4>
+                                                </div>
+                                                <label class="qa-item__lbl qa-item__lbl-prep_mrg-r qa-item__lbl-prep_mrg-t" for="supp" class="qa-item__question qa-item__question_text-style">
+                                                <!-- <div class="qa-item__icon-container"> -->
+                                                    <span class="vert"></span>
+                                                    <span class="hor"></span>
+                                                <!-- </div> -->
+                                            </label>
+                                            </div>
                                         <div class="qa-item__answer-container">
-                                            <p class="qa-item__answer qa-item__answer_text-style">
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, dolor?
+                                            <p class="qa-item__answer qa-item__answer-margin qa-item__answer_text-style">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, laboriosam facilis recusandae eos, ducimus sunt sequi nulla, laudantium doloribus facere ratione maxime. Praesentium assumenda expedita quod odio facilis exercitationem itaque.
                                             </p>
                                         </div>
                                     </div>
