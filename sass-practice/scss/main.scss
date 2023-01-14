@@ -3,7 +3,7 @@
 @import './mixins';
 
 // general styles
-::-webkit-scrollbar {
+scrollbar {
     display: none;
 }
 
@@ -83,9 +83,14 @@ ul {
     display: none;
 }
 
-.lbl-container {
+.lbl-container-benef {
     display: flex;
-    gap: 156px;
+    gap: 57px;
+}
+
+.lbl-container-partc {
+    display: flex;
+    gap: 142px;
 }
 
 .qa-item__answer-container {
@@ -111,13 +116,13 @@ ul {
 }
 
 // plus
-.qa-item__lbl-benef {
+.qa-item__lbl {
     width: 15px;
     height: 15px;
     cursor: pointer;
     display: flex;
     position: relative;
-    
+    flex-shrink: 0;
 }
 
 .hor {
@@ -141,10 +146,16 @@ ul {
     transition: 1s ease;
   }
   
-  .qa-item__chx-benef:checked ~ .lbl-container .qa-item__lbl-benef .vert {
+  .qa-item__chx-benef:checked ~ .lbl-container-benef .qa-item__lbl .vert,
+  .qa-item__chx-benef:checked ~ .lbl-container-benef .qa-item__lbl .hor
+  {
     transform: rotate(360deg);
+    background: $black;
   }
 
-  .qa-item__chx-benef:checked ~ .lbl-container .qa-item__lbl-benef .hor {
+  .qa-item__chx-partc:checked ~ .lbl-container-partc .qa-item__lbl .vert,
+  .qa-item__chx-partc:checked ~ .lbl-container-partc .qa-item__lbl .hor
+  {
     transform: rotate(360deg);
+    background: $black;
   }
