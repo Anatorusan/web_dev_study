@@ -2,6 +2,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 
+
 // general styles
 
 body {
@@ -39,6 +40,8 @@ figure {
     margin: 0;
 }
 
+.lsp-03 { letter-spacing: -0.03em;}
+
 // macro layout
 .wrapper {
     max-width: 1440px;
@@ -59,7 +62,19 @@ figure {
 }
 
 // micro layout
+.study-sect__text-cont {
+    padding-top: 110px;
+    padding-left: 14.6%;
+    padding-bottom: 95px;
+}
 
+.study-sect__h2-cont {
+    margin-bottom: 30px;
+}
+
+.study-sect__h3-cont {
+    margin-bottom: 70px
+}
 
 // navbar
 .navbar-container {
@@ -120,12 +135,7 @@ figure {
 
 .nav_li {
     list-style-type: none;
-    margin-right: 17px;
-}
-
-.nav_li::after {
-    content: url('icons/arrow_dropdown_black.svg');
-    padding-left: 10px;
+    margin-right: 10px;
 }
 
 .links-container__link {
@@ -133,6 +143,7 @@ figure {
     color: #000;
     text-transform: uppercase;
     opacity: 0.85;
+    margin-right: 10px;
 }
 
 .language-container {
@@ -152,29 +163,29 @@ select {
 }
 
 .school {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .menu {
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 @media all and (min-width: 768px) {
 
     .nav_li {
-        margin-right: 25px;
+        margin-right: 15px;
     }
 
     .partners-marg {
-        margin-right: 50px;
+        margin-right: 20px;
     }
 
     .support {
-        margin-right: 20px;
+        margin-right: 15px;
     }
 }
 
-@media all and (min-width: 960px) {
+@media all and (min-width: 1000px) {
     .nav_li {
         margin-right: 50px;
     }
@@ -184,7 +195,7 @@ select {
     }
 }
 
-@media all and (min-width: 1205px) {
+@media all and (min-width: 1240px) {
     .logo__caption {
         display: block;
         padding-left: 10px;
@@ -201,4 +212,28 @@ select {
     .school {
         margin-left: 0px;
     }
+}
+
+// study section
+.study-sect__h2 {
+    font-size: 16px;
+    line-height: 150%;
+    color: #0536FC;
+    opacity: 0.9;
+}
+
+.study-sect__h3 {
+    font-size: 57px;
+    line-height: 104%;
+
+}
+
+.study-sect__p {
+    line-height: 150%;
+    opacity: 0.6;
+}
+
+.study-sect__arr-cont {
+    right: 35px;
+    top: 335px;
 }
