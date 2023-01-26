@@ -1,11 +1,8 @@
 @import '_variables.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 
 // general styles
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Basis Grotesque Pro', sans-serif;
@@ -24,6 +21,22 @@ img {
 
 ul {
     list-style: none;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+figure {
+    margin: 0;
 }
 
 // macro layout
