@@ -1,0 +1,191 @@
+@import '_variables.scss';
+
+// general styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Basis Grotesque Pro', sans-serif;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+// macro layout
+.wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media all and (max-width: 767px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+// micro layout
+
+
+// navbar
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+}
+
+.navbar-container_pad {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo-container {
+    margin-left: 3.5%;
+    margin-right: 3.4%;
+}
+
+.logo__caption {
+    display: none;
+    margin-left: 40px;
+}
+
+.logo__link {
+    text-decoration: none;
+}
+
+.logo__image_no-mxwdth {
+    max-width: none;
+}
+
+.logo__figure {
+    position: relative;
+}
+
+.logo__image-container {
+    position: absolute;
+    top: 7px;
+}
+
+.links-and-language-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+}
+
+.links-container__ul {
+    display: flex;
+}
+
+.nav_li {
+    list-style-type: none;
+    margin-right: 17px;
+}
+
+.nav_li::after {
+    content: url('icons/arrow_dropdown_black.svg');
+    padding-left: 10px;
+}
+
+.links-container__link {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    margin-right: 3.5%;
+}
+
+select {
+    color: #0536FC;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    border: 1px solid transparent;
+}
+
+.school {
+    margin-left: 40px;
+}
+
+.menu {
+    margin-left: 40px;
+}
+
+@media all and (min-width: 768px) {
+
+    .nav_li {
+        margin-right: 25px;
+    }
+
+    .partners-marg {
+        margin-right: 50px;
+    }
+
+    .support {
+        margin-right: 20px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    .nav_li {
+        margin-right: 50px;
+    }
+
+    .partners-marg {
+        margin-right: 101px;
+    }
+}
+
+@media all and (min-width: 1205px) {
+    .logo__caption {
+        display: block;
+        padding-left: 10px;
+        color: #000;
+        font-weight: 300;
+        opacity: 0.35;
+    }
+
+    .logo-container {
+        margin-left: 3.5%;
+        margin-right: 6.3%;
+    }
+
+    .school {
+        margin-left: 0px;
+    }
+}
