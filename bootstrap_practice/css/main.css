@@ -11689,8 +11689,9 @@ figure {
 }
 .study-sect__text-cont {
   padding-top: 110px;
-  padding-left: 14.6%;
+  padding-left: 20px;
   padding-bottom: 95px;
+  padding-right: 20px;
 }
 
 .study-sect__h2-cont {
@@ -11704,7 +11705,7 @@ figure {
 .ambTeam-sect__text-block {
   max-width: 719px;
   padding-bottom: 120px;
-  padding-left: clamp(20px, 9vw, 120px);
+  padding-left: 20px;
   padding-top: 110px;
   padding-right: 20px;
 }
@@ -11717,6 +11718,14 @@ figure {
   padding-bottom: 100px;
 }
 
+@media all and (min-width: 430px) {
+  .study-sect__text-cont {
+    padding-left: clamp(20px, 19vw, 210px);
+  }
+  .ambTeam-sect__text-block {
+    padding-left: clamp(20px, 9vw, 120px);
+  }
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -11879,4 +11888,8 @@ select {
 .ambTeam-sect__h3 {
   font-size: clamp(24px, 3vw, 38px);
   line-height: 111%;
+}
+
+.ambTeam-sect__text-block {
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
