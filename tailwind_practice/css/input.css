@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media all and (max-width: 767px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
