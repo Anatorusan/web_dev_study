@@ -11,58 +11,89 @@
     <!-- nabvar -->
     <div class="max-w-fullScr mx-auto">
         <nav>
-            <div class="flex justify-between">
+            <div class="flex relative justify-between py-6 px-3 big-mobile:pr-59px big-mobile:pl-50px">
                 <div class="">
                     <a class="" href="#">
                         <figure class="flex">
-                            <div class="">
+                            <div class="absolute top-29px">
                                 <img class="" src="../icons/Copy of TeachforUkraine-Logo-01 1.svg" alt="logo">
                             </div>
-                            <figcaption class="font-main">Програма для змін у країні</figcaption>
+                            <figcaption class="font-main font-light opacity-35 tracking-standard pl-50px 
+                            hidden xl:block">Програма для змін у країні</figcaption>
                         </figure>
                     </a>
                 </div>
                 <div class="flex flex-1 justify-between">
-                    <div class="">
+                    <!-- <div class=""> -->
                         <ul class="flex">
-                            <li class="desktop-hidden "><a class="font-main uppercase tracking-standard" href="#">меню</a>
-                                <span class="inline-block ml-2.5 align-[2px]"><svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
-                                </svg></span>
+                            <li class="desktop-hidden pl-12">
+                                <div class="flex items-center">
+                                    <a class="font-main uppercase tracking-standard opacity-85" href="#">меню</a>
+                                    <span class="inline-block ml-2.5">
+                                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
                             </li>
-                            <li class="mobile-hidden "><a class="font-main uppercase text-base tracking-standard" href="#">школам</a>
-                                <span class="inline-block ml-2.5 align-[2px]"><svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
-                                </svg></span>
+                            <li class="mobile-hidden pl-12 1040px:pl-90px">
+                                <div class="flex items-center">
+                                    <a class="font-main uppercase text-base tracking-standard opacity-85" href="#">школам</a>
+                                    <span class="inline-block ml-2.5">
+                                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
                             </li>
-                            <li class="mobile-hidden "><a class="font-main uppercase tracking-standard" href="#">партнерам</a>
-                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
-                                </svg>
+                            <li class="mobile-hidden pl-7 1040px:pl-50px">
+                                <div class="flex items-center">
+                                    <a class="font-main uppercase tracking-standard opacity-85" href="#">партнерам</a>
+                                    <span class="inline-block ml-2.5 ">
+                                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
                             </li>
-                            <li class=""><a class="font-main uppercase tracking-standard" href="#">про нас</a>
-                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
-                                </svg>
+                            <li class="pl-3 pr-3 big-mobile:pl-7 1040px:pl-101px">
+                                <div class="flex items-center">
+                                    <a class="font-main uppercase tracking-standard whitespace-nowrap opacity-85 text-main-blue" href="#">про нас</a>
+                                    <span class="inline-block ml-2.5 ">
+                                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="#0536FC"/>
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="#0536FC"/>
+                                        </svg>
+                                    </span>
+                                </div>
                             </li>
-                            <li class="mobile-hidden "><a class="font-main uppercase tracking-standard" href="#">історії</a>
-                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
-                                </svg>
+                            <li class="mobile-hidden pl-7 1040px:pl-50px">
+                                <div class="flex items-center">
+                                    <a class="font-main uppercase tracking-standard opacity-85" href="#">історії</a>
+                                    <span class="inline-block ml-2.5">
+                                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
                             </li>
-                            <li class="mobile-hidden "><a class="font-main uppercase tracking-standard" href="#">підтримка</a>
-                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
-                                    <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
-                                </svg>
+                            <li class="pl-7 hidden 840px:block 1040px:pl-50px pr-3">
+                                <div class="flex items-center">
+                                    <a class="font-main uppercase tracking-standard opacity-85" href="#">підтримка</a>
+                                    <span class="inline-block ml-2.5 ">
+                                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" fill="black"/>
+                                            <path d="M0 0.336936L0.361281 0L5 4.32613L9.63872 0L10 0.336936L5 5L0 0.336936Z" stroke="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
                             </li>
                         </ul>
-                    </div>
+                    <!-- </div> -->
                     <div class="">
                         <select class="font-main uppercase" name="languages" id="lang-select">
                             <option vlaue="ukr">укр</option>
@@ -74,39 +105,41 @@
         </nav>
     </div>
     <!-- program section -->
-    <div class="wrapper">
-        <section class="study-sect position-relative">
-            <div class="study-sect__text-cont">
-                <div class="study-sect__h2-cont">
-                    <h2 class="study-sect__h2 fw-bolder text-uppercase lsp-03">програма</h2>
+    <div class="max-w-fullScr mx-auto">
+        <section class="pt-122px pl-3 pr-3 big-mobile:pl-14.6% big-mobile:pr-0">
+            <div class="pb-100px">
+                <div class="pb-30px">
+                    <h2 class="">програма</h2>
                 </div>
-                <div class="study-sect__h3-cont">
-                    <h3 class="study-sect__h3 fw-bolder text-uppercase lsp-03">Навчай<br> 
+                <div class="pb-70px">
+                    <h3 class="">Навчай<br> 
                         — для України</h3>
                 </div>
-                <div class="study-sect-p">
-                    <p class="study-sect__p lsp-03">Освітньо-громадська організація.</p>
+                <div class="">
+                    <p class="">Освітньо-громадська організація.</p>
                 </div>
             </div>
-            <div class="study-sect__arr-cont position-absolute">
+            <div class="">
                 <a href="#">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M29.143 14.3022L15.6061 27.7032V0H14.3939V27.7032L0.857022 14.3022L0 15.1509L14.143 29.1516L15 30L15.857 29.1516L30 15.1509L29.143 14.3022Z" fill="black"/>
                     </svg>
                 </a>
             </div>
-            <ul class="nav nav-pills nav-fill ">
-                <li class="nav-item pills-cntr">
-                  <a class="nav-link active text-uppercase lsp-03 nav-pills-size wsp-nwrp" aria-current="page" href="#">про нас</a>
+            <!-- selectors block -->
+            <ul class="">
+                <li class="">
+                  <a class="" aria-current="page" href="#">про нас</a>
                 </li>
-                <li class="nav-item pills-cntr">
-                  <a class="nav-link text-uppercase lsp-03 nav-pills-size wsp-nwrp" href="#">наша діяльність</a>
+                <li class="">
+                  <a class="" href="#">наша діяльність</a>
                 </li>
               </ul>
         </section>
+        <!-- ambition team section -->
         <section class="ambTeam-sect">
             <div class="ambTeam-sect__img-cont">
-                <img src="images/brainstorm.jpg" alt="people are brainstroming" width="1440" height="1110">
+                <img src="../images/brainstorm.jpg" alt="people are brainstroming" width="1440" height="1110">
             </div>
             <div class="ambTeam-sect__text-block">
                 <div class="ambTeam-sect__text-cont">
