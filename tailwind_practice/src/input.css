@@ -13,3 +13,15 @@
         display: none;
     }
 }
+
+.about_us_rad:checked ~ .about_us_rad-cont {
+    border: 1px solid transparent;
+    background-color: #0536FC;
+    color: #FFFFFF;
+}
+
+.activity_rad:checked ~ .activity_rad-cont {
+    border: 1px solid transparent;
+    background-color: #0536FC;
+    color: #FFFFFF;
+}

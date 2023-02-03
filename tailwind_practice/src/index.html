@@ -106,62 +106,68 @@
     </div>
     <!-- program section -->
     <div class="max-w-fullScr mx-auto">
-        <section class="pt-122px pl-3 pr-3 big-mobile:pl-14.6% big-mobile:pr-0">
+        <section class="pt-122px pl-3 pr-3 big-mobile:pl-14.6% big-mobile:pr-0 relative">
             <div class="pb-100px">
                 <div class="pb-30px">
-                    <h2 class="">програма</h2>
+                    <h2 class="font-main uppercase font-bold tracking-standard text-main-blue opacity-90">програма</h2>
                 </div>
                 <div class="pb-70px">
-                    <h3 class="">Навчай<br> 
+                    <h3 class="font-main uppercase font-bold tracking-standard text-4xl big-mobile:text-57px leading-104%">Навчай<br> 
                         — для України</h3>
                 </div>
                 <div class="">
-                    <p class="">Освітньо-громадська організація.</p>
+                    <p class="font-main tracking-standard opacity-60">Освітньо-громадська організація.</p>
                 </div>
             </div>
-            <div class="">
+            <div class="absolute right-34px top-353px">
                 <a href="#">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M29.143 14.3022L15.6061 27.7032V0H14.3939V27.7032L0.857022 14.3022L0 15.1509L14.143 29.1516L15 30L15.857 29.1516L30 15.1509L29.143 14.3022Z" fill="black"/>
                     </svg>
                 </a>
             </div>
-            <!-- selectors block -->
-            <ul class="">
-                <li class="">
-                  <a class="" aria-current="page" href="#">про нас</a>
-                </li>
-                <li class="">
-                  <a class="" href="#">наша діяльність</a>
-                </li>
-              </ul>
         </section>
+        <!-- selectors block -->
+        <form class="flex flex-col big-mobile:flex-row" action="">
+            <input class="about_us_rad hidden" type="radio" id="about" value="about" name="selector" checked>
+            <div class="about_us_rad-cont py-33px grow basis-1/2 border border-black/15">
+                <label class="flex justify-center" for="about">
+                    <div class="tracking-standard uppercase">про нас</div>
+                </label>
+            </div>
+            <input class="activity_rad hidden" type="radio" id="activity" value="activity" name="selector">
+            <div class="activity_rad-cont py-33px grow basis-1/2 border border-black/15">
+                <label class="flex justify-center" for="activity">
+                    <div class="tracking-standard uppercase">наша діяльність</div>
+                </label>
+            </div>
+        </form>
         <!-- ambition team section -->
-        <section class="ambTeam-sect">
-            <div class="ambTeam-sect__img-cont">
+        <section class="892px:grid grid-cols-2 grid-rows-1">
+            <div class="col-start-1 col-end-3 row-start-1 row-end-3">
                 <img src="../images/brainstorm.jpg" alt="people are brainstroming" width="1440" height="1110">
             </div>
-            <div class="ambTeam-sect__text-block">
-                <div class="ambTeam-sect__text-cont">
-                    <div class="study-sect__h2-cont">
-                        <h2 class="study-sect__h2 fw-bolder text-uppercase lsp-03">хто ми</h2>
+            <div class="pt-120px pb-130px pr-3 pl-3 big-mobile:pl-14.6% 1040px:pl-120px col-start-2 col-end-3 row-start-2 row-end-3 bg-white">
+                <div class="max-w-363px">
+                    <div class="pb-30px">
+                        <h2 class="font-main uppercase font-bold tracking-standard text-main-blue opacity-90">хто ми</h2>
                     </div>
-                    <div class="study-sect__h3-cont">
-                        <h2 class="ambTeam-sect__h3 fw-bolder text-uppercase lsp-03">амбітня команда
-                            — однодумців</h2>
+                    <div class="pb-70px">
+                        <h3 class="font-main uppercase font-bold tracking-standard text-38px leading-111%">
+                            амбітня команда
+                            — однодумців</h3>
                     </div>
-                    <div class="ambTeam-sect-p">
-                        <p class="study-sect__p lsp-03">
+                    <div class="pb-100px">
+                        <p class="font-main tracking-standard opacity-60">
                             Команда спеціалістів, що 4 роки 
                             успішно займається освітою дітей у 
                             малорозвинутих селах та містах України.
                         </p>
                     </div>
-                    <button type="button" class="btn btn-primary text-uppercase lsp-03 btn-size">
+                    <button class="font-main tracking-standard text-white uppercase bg-main-blue px-35px pb-15px pt-18px" type="button" class="">
                     стати учасником
                     </button>
                 </div>
-                
             </div>
         </section>
     </div>
