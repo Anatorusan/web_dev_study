@@ -12,17 +12,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
+}
+
+ol {
+    list-style-position: inside;
 }
 
 .wrapper {
     max-width: 1244px;
 }
 
-.text-container{
+.text-container {
     background-color: #F3F5F6;
     border-radius: 20px;
-    padding: 119px 92px;
+    padding: 64px 32px;
+}
+
+.list-item {
+    padding: 55px 60px;
+    background-color: #fff;
+}
+
+.list-item::marker {
+    ;
+}
+
+.list-item-wrap {
+    display:inline-block;
+}
+
+.check-01__h3,
+.check-02__h3,
+.check-03__h3,
+.check-04__h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    align-self: center;
+}
+
+.check-01__accord,
+.check-02__accord,
+.check-03__accord,
+.check-04__accord, {
+    padding-top: 34px;
+}
+
+.check-01__text,
+.check-02__text,
+.check-03__text,
+.check-04__text {
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(60, 60, 67, 0.85);
 }
 
 .check-01,
@@ -57,13 +100,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .check-01:checked ~ .check-01__accord,
 .check-02:checked ~ .check-02__accord,
 .check-03:checked ~ .check-03__accord,
 .check-04:checked ~ .check-04__accord {
-    max-height: 100px;
+    max-height: 150px;
 }
 
 .check-01__lbl .plus,
