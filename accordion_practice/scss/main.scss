@@ -49,21 +49,47 @@ body {
     transition: all 0.25s linear;
 }
 
-.check-01:checked ~ .check-01__accord {
+.plus-bg {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #F3F5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-01:checked ~ .check-01__accord,
+.check-02:checked ~ .check-02__accord,
+.check-03:checked ~ .check-03__accord,
+.check-04:checked ~ .check-04__accord {
     max-height: 100px;
 }
 
-.check-01__lbl .plus {
+.check-01__lbl .plus,
+.check-02__lbl .plus,
+.check-03__lbl .plus,
+.check-04__lbl .plus {
     transition: all 0.25s linear;
 }
 
-.check-01:checked ~ .check-01__lbl .plus {
+.check-01:checked ~ .check-01__lbl .plus,
+.check-02:checked ~ .check-02__lbl .plus,
+.check-03:checked ~ .check-03__lbl .plus,
+.check-04:checked ~ .check-04__lbl .plus {
     transform: rotate(45deg);
 }
 
-.check-01:checked ~ .check-01__lbl .plus-bg {
+.check-01:checked ~ .check-01__lbl .plus-bg,
+.check-02:checked ~ .check-02__lbl .plus-bg,
+.check-03:checked ~ .check-03__lbl .plus-bg,
+.check-04:checked ~ .check-04__lbl .plus-bg {
     background-color: #000;
-    border-radius: 50%;
-    width: 25px;
 }
 
+.check-01:checked ~ .check-01__lbl .plus-path,
+.check-02:checked ~ .check-02__lbl .plus-path,
+.check-03:checked ~ .check-03__lbl .plus-path,
+.check-04:checked ~ .check-04__lbl .plus-path {
+    fill: #fff;
+}
