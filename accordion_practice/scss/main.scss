@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Sintony', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 1244px;
+}
+
+.text-container{
+    background-color: #F3F5F6;
+    border-radius: 20px;
+    padding: 119px 92px;
+}
+
+.check-01,
+.check-02,
+.check-03,
+.check-04 {
+    display: none;
+}
+
+.check-01__lbl,
+.check-02__lbl,
+.check-03__lbl,
+.check-04__lbl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-01__accord,
+.check-02__accord,
+.check-03__accord,
+.check-04__accord {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.25s linear;
+}
+
+.check-01:checked ~ .check-01__accord {
+    max-height: 100px;
+}
+
+.check-01__lbl .plus {
+    transition: all 0.25s linear;
+}
+
+.check-01:checked ~ .check-01__lbl .plus {
+    transform: rotate(45deg);
+}
+
+.check-01:checked ~ .check-01__lbl .plus-bg {
+    background-color: #000;
+    border-radius: 50%;
+    width: 25px;
+}
+
