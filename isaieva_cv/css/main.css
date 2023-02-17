@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "MAK";
+  src: url(../fonts/MAK-bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
 *,
 ::after,
 ::before {
@@ -10,8 +16,54 @@ body {
   background-color: #2E282A;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .wrapper {
   max-width: 1122px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio__images-container {
+  display: flex;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__list {
+  display: flex;
+}
+
+.contact__list-item {
+  display: flex;
+}
+
+.lower-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.header-main__text {
+  font-family: "MAK";
+  font-weight: 700;
+  color: #FFF;
+  font-size: 123px;
+  line-height: 120px;
 }/*# sourceMappingURL=main.css.map */

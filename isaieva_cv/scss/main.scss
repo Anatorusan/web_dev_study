@@ -1,3 +1,5 @@
+@use 'fonts.scss';
+
 // general styles
 
 *,
@@ -12,6 +14,15 @@ body {
     background-color: #2E282A;
 }
 
+// fonts
+// font-family: 'Satisfy', cursive;
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .wrapper {
     max-width: 1122px;
     margin-left: auto;
@@ -20,3 +31,47 @@ body {
 
 // macro layout
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main {
+    ;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio__images-container {
+    display: flex;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__list {
+    display: flex;
+}
+
+.contact__list-item {
+    display: flex;
+}
+
+.lower-footer {
+    display:flex;
+    justify-content: center;
+}
+
+// styling
+.header-main__text {
+    font-family: "MAK";
+    font-weight: 700;
+    color: #FFF;
+    font-size: 123px;
+    line-height: 120px;
+}
